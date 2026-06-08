@@ -44,6 +44,9 @@ var siteConfig = {
       "#7A4F9E", // violet
     ]
   },
+  suggest: {
+    gadm: { type: 'PARAMS', value: { gadmGid: 'SWE' } }
+  },
   "maps": {
     "mapStyles": {
       "defaultProjection": "MERCATOR",
@@ -115,8 +118,11 @@ var siteConfig = {
       "hostingOrganizationKey",
       "protocol",
       "publishingCountry",
+      "country",
       "institutionCode",
-      "collectionCode"
+      "collectionCode",
+      "datasetId",
+      "datasetName",
     ],
     // "defaultEnabledTableColumns": [
     //   "features",
