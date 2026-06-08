@@ -13,35 +13,14 @@ var siteConfig = {
       "id": "occurrenceKey"
     },
     {
-      "id": "collectionSearch"
-    },
-    {
-      "id": "collectionKey"
-    },
-    {
       "id": "datasetSearch"
     },
     {
       "id": "datasetKey"
-    },
-    {
-      "id": "institutionSearch"
-    },
-    {
-      "id": "institutionKey"
-    },
-    {
-      "id": "literatureSearch"
     }
   ],
   "disableInlineTableFilterButtons": false,
   "availableCatalogues": [
-    // TODO: you should remove types you do not want to use
-    "OCCURRENCE",
-    "DATASET",
-    "COLLECTION",
-    "INSTITUTION",
-    "LITERATURE"
   ],
   "dataHeader": {
     "enableApiPopup": false,
@@ -50,7 +29,20 @@ var siteConfig = {
   "theme": {
     "primary": themeStyle.colors.primary,
     "borderRadius": 3,
-    "stickyOffset": "0px"
+    "stickyOffset": "0px",
+    "fontFamily": "Roboto, sans-serif",
+    chartColors: [
+      "#234459", // dark blue-teal
+      "#6DA644", // green
+      "#F2EC9B", // pale yellow
+      "#E89B3C", // golden orange
+      "#D9762A", // burnt orange
+      "#D14B3C", // brick red
+      "#B33636", // deep red
+      "#D3D936", // chartreuse
+      "#5C3A82", // plum
+      "#7A4F9E", // violet
+    ]
   },
   "maps": {
     "mapStyles": {
@@ -75,39 +67,48 @@ var siteConfig = {
       "cmsLocale": "en-GB",
       "gbifOrgLocalePrefix": "",
       "mapTileLocale": "en"
-    },
-    {
-      "code": "da",
-      "localeCode": "da",
-      "label": "Dansk",
-      "default": false,
-      "textDirection": "ltr",
-      "iso3LetterCode": "dan",
-      "cmsLocale": "en-GB",
-      "gbifOrgLocalePrefix": "",
-      "mapTileLocale": "en"
     }
   ],
   "messages": {},
   "occurrenceSearch": {
     "scope": {
-      "type": "in",
-      "key": "publishingOrg",
-      "values": [
-        "760d5f24-4c04-40da-9646-1b2c935da502",
-        "2e7df380-8356-4533-bcb3-5459e23c794e",
-        "8e1a97a0-3ca8-11d9-8439-b8a03c50a862"
+      "type": "and",
+      "predicates": [
+        {
+          "type": "in",
+          "key": "occurrenceStatus",
+          "values": [
+            "PRESENT"
+          ]
+        },
+        {
+          "type": "in",
+          "key": "country",
+          "values": [
+            "SE"
+          ]
+        },
+        {
+          "type": "not",
+          "predicate": {
+            "type": "in",
+            "key": "issue",
+            "values": [
+              "COUNTRY_COORDINATE_MISMATCH"
+            ]
+          }
+        }
       ]
     },
-    "highlightedFilters": [
-      "taxonKey",
-      "verbatimScientificName",
-      "institutionKey",
-      "collectionKey",
-      "catalogNumber",
-      "recordedBy",
-      "identifiedBy"
-    ],
+    // "highlightedFilters": [
+    //   "taxonKey",
+    //   "verbatimScientificName",
+    //   "institutionKey",
+    //   "collectionKey",
+    //   "catalogNumber",
+    //   "recordedBy",
+    //   "identifiedBy"
+    // ],
     "excludedFilters": [
       "occurrenceStatus",
       "networkKey",
@@ -117,16 +118,16 @@ var siteConfig = {
       "institutionCode",
       "collectionCode"
     ],
-    "defaultEnabledTableColumns": [
-      "features",
-      "institutionKey",
-      "collectionKey",
-      "catalogNumber",
-      "country",
-      "year",
-      "recordedBy",
-      "identifiedBy"
-    ],
+    // "defaultEnabledTableColumns": [
+    //   "features",
+    //   "institutionKey",
+    //   "collectionKey",
+    //   "catalogNumber",
+    //   "country",
+    //   "year",
+    //   "recordedBy",
+    //   "identifiedBy"
+    // ],
     "tabs": [
       "table",
       "gallery",
@@ -136,29 +137,9 @@ var siteConfig = {
       "download"
     ],
     "mapSettings": {
-      "lat": 52,
-      "lng": 12,
-      "zoom": 4.911544076366507
-    }
-  },
-  "collectionSearch": {
-    excludedFilters: ['country', 'active'],
-    // highlightedFilters: ['q', 'type', 'publishingOrg', 'license'],
-    // defaultTableColumns: ['title', 'description', 'publisher', 'type', 'occurrenceCount', 'literatureCount'],
-    scope: {
-      // TODO: you should add a scope here if you need search to be limited to a subset
-      // search filters have the format {field: [values]}
-      active: true
-    },
-  },
-  "institutionSearch": {
-    // excludedFilters: ['country', 'active'],
-    // highlightedFilters: ['q', 'type'],
-    // defaultTableColumns: ['title', 'type'],
-    scope: {
-      // TODO: you should add a scope here if you need search to be limited to a subset
-      // search filters have the format {field: [values]}
-      active: true
+      "lat": 62.126,
+      "lng": 18.9,
+      "zoom": 5.2438486
     }
   },
   "datasetSearch": {
@@ -167,21 +148,7 @@ var siteConfig = {
     scope: {
       // TODO: you should add a scope here if you need search to be limited to a subset
       // search filters have the format {field: [values]}
-      type: ['OCCURRENCE', 'CHECKLIST']
+      publishingCountry: ['SE']
     },
   },
-  "publisherSearch": {},
-  "literatureSearch": {
-    "scope": {
-      // TODO: you should add a scope here if you need search to be limited to a subset
-      // literature search use the predicate format similar to occurrence search
-      "type": "in",
-      "key": "publishingOrganizationKey",
-      "values": [
-        "760d5f24-4c04-40da-9646-1b2c935da502",
-        "2e7df380-8356-4533-bcb3-5459e23c794e",
-        "8e1a97a0-3ca8-11d9-8439-b8a03c50a862"
-      ]
-    }
-  }
 }

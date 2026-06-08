@@ -4,23 +4,23 @@
 
 - text: Data
   menu: 
-  - text: Förekomster
+  - text: Occurrences
     href: /occurrence/search
-  - text: Datamängder
+  - text: Datasets
     href: /dataset/search
-- text: Länkar
+- text: Links
   menu: # Dropdown menu (one level deep only)
-  - text: Bastema-demo
+  - text: Base theme demo
     href: https://hp-base-theme.gbif-staging.org/
-  - text: Andra webbplatser som använder temat
+  - text: Other sites using the theme
     href: https://github.com/gbif/?q=hp-&type=all&language=&sort=
   - text: "---" # Divider to separate blocks of menu items (at least 3 "-")
-  - text: "Dokumentation" # Title for block of menu items
-  - text: Jekyll-dokumentation
+  - text: "Docs" # Title for block of menu items
+  - text: Jekyll documentation
     href: https://jekyllrb.com/docs/pages/
-  - text: Markdown-handledning
+  - text: Markdown tutorial
     href: https://guides.github.com/features/mastering-markdown/
-  - text: YAML-handledning
+  - text: YAML tutorial
     href: https://dev.to/paulasantamaria/introduction-to-yaml-125f
-- text: Nyheter
+- text: News
   href: /news/

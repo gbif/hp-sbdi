@@ -9,6 +9,7 @@ relatedPosts:
   zh: "相关帖子"
   ja: "関連記事"
   da: "Relaterede indlæg"
+  se: "Relaterade inlägg"
 
 differentLanguage:
   en: "This page is available in following languages"
@@ -20,6 +21,7 @@ differentLanguage:
   zh: "本页面提供多种语言版本"
   ja: "このページは複数の言語で利用できます"
   da: "Denne side er tilgængelig på følgende sprog"
+  se: "Den här sidan är tillgänglig på följande språk"
 
 tocTitle:
   en: "On this page"
@@ -31,6 +33,7 @@ tocTitle:
   ja: "このページについて"
   es: "En esta página"
   da: "På denne side"
+  se: "På den här sidan"
 
 terms:
   en: |
@@ -51,6 +54,8 @@ terms:
     当社のウェブサイトではクッキーを使用しています。一部は技術的に必要なもので、他のものはユーザーエクスペリエンスを向上させるのに役立ちます。不要なクッキーを「拒否」を選択することでお断りすることができます。詳細については、当社の[プライバシーポリシー](/privacy)をご覧いただき、プライバシーの実践とクッキーの使用に関する追加情報をご確認ください。
   da: |
     Vi bruger cookies på vores hjemmeside. Nogle er teknisk nødvendige, andre hjælper os med at forbedre din brugeroplevelse. Du kan afvise ikke-nødvendige cookies ved at vælge "Afvis". Se venligst vores [Privatlivspolitik](/privacy) for yderligere information om vores privatlivspraksis og brug af cookies.
+  se: |
+    Vi använder cookies på vår webbplats. Vissa är tekniskt nödvändiga, andra hjälper oss att förbättra din användarupplevelse. Du kan avvisa icke nödvändiga cookies genom att välja "Avvisa". Se vår [Integritetspolicy](/privacy) för mer information om vår integritetspraxis och användning av cookies.
 
 acceptTerms:
   en: 'Accept'
@@ -62,6 +67,7 @@ acceptTerms:
   zh: '接受'
   ja: '承諾'
   da: 'Accepter'
+  se: 'Acceptera'
 
 rejectTerms:
   en: 'Reject'
@@ -73,6 +79,7 @@ rejectTerms:
   zh: '拒绝'
   ja: '拒否'
   da: 'Afvis'
+  se: 'Avvisa'
 
 # Used by the stories block type
 contentTypes:
@@ -86,6 +93,7 @@ contentTypes:
     zh: '数据使用'
     ja: 'データ利用'
     da: 'Databrug'
+    se: 'Dataanvändning'
   News:
     en: 'News'
     es: 'Noticias'
@@ -96,6 +104,7 @@ contentTypes:
     zh: '新闻'
     ja: 'ニュース'
     da: 'Nyheder'
+    se: 'Nyheter'
   Event:
     en: 'Event'
     es: 'Evento'
@@ -106,6 +115,7 @@ contentTypes:
     zh: '事件'
     ja: 'イベント'
     da: 'Begivenhed'
+    se: 'Evenemang'
   Literature:
     en: 'Literature'
     es: 'Literatura'
@@ -116,3 +126,4 @@ contentTypes:
     zh: '文学'
     ja: '文学'
     da: 'Litteratur'
+    se: 'Litteratur'

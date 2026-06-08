@@ -7,12 +7,12 @@ background: /assets/images/placeholders/Chaetoceros-didymus_Ann-Turi-Skjevik-e16
 imageLicense: None for this image
 height: 70vh
 cta:
-  - text: Occurrences
+  - text: Förekomster
     href: /occurrence/search
     isPrimary: true # this will break as it is illegal yaml
-  - text: Datasets
+  - text: Datamängder
     href: /dataset/search
-permalink: /en/
+permalink: /
 ---
 
 Edit `/home.md` to change the text.
