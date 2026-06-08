@@ -47,6 +47,7 @@ var siteConfig = {
   suggest: {
     gadm: { type: 'PARAMS', value: { gadmGid: 'SWE' } }
   },
+  openDrawerOnTableRowClick: false,
   "maps": {
     "mapStyles": {
       "defaultProjection": "MERCATOR",
@@ -61,10 +62,21 @@ var siteConfig = {
   },
   "languages": [
     {
+      "code": "se",
+      "localeCode": "sv",
+      "label": "Svenska",
+      "default": true,
+      "textDirection": "ltr",
+      "iso3LetterCode": "swe",
+      "cmsLocale": "en-GB",
+      "gbifOrgLocalePrefix": "",
+      "mapTileLocale": "en"
+    },
+    {
       "code": "en",
       "localeCode": "en",
       "label": "English",
-      "default": true,
+      "default": false,
       "textDirection": "ltr",
       "iso3LetterCode": "eng",
       "cmsLocale": "en-GB",
