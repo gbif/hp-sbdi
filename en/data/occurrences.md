@@ -1,6 +1,6 @@
 ---
 title: Occurrences
-description: We publish open data
+description: Occurrence search
 permalink: /en/occurrence/search
 lang-ref: occurrence
 layout: occurrence

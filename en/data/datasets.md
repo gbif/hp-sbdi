@@ -1,6 +1,6 @@
 ---
 title: Datasets
-description: We publish open data
+description: Dataset search
 permalink: /en/dataset/search
 layout: dataset
 lang-ref: dataset

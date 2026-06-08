@@ -8,10 +8,10 @@ imageLicense: None for this image
 height: 70vh
 cta:
   - text: Occurrences
-    href: /occurrence/search
+    href: /en/occurrence/search
     isPrimary: true # this will break as it is illegal yaml
   - text: Datasets
-    href: /dataset/search
+    href: /en/dataset/search
 permalink: /en/
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: Occurrence
-description: We publish open data
+description: Occurrence details
 permalink: /en/occurrence/_key_
 layout: occurrence-key
 ---
