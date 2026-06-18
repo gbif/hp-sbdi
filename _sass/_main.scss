@@ -432,3 +432,21 @@ figure.news-detail-image {
     margin-top: 2rem;
     padding-top: 1rem;
 }
+
+.home--logos {
+    h2 {
+        font-size: 1.2rem;
+    }
+    @media screen and (min-width: 769px) {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+
+    div {
+        display: grid;
+        grid-template-columns: auto auto auto auto auto auto;
+        gap: 1.5rem;
+        margin-top: 1.4rem;
+    }
+}
