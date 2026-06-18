@@ -1,6 +1,6 @@
 ---
-title: Collection search
-description: We publish open data
+title: Collections
+description: Collection search
 permalink: /collection/search
 layout: collection-search
 ---

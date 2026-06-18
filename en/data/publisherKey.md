@@ -1,6 +1,6 @@
 ---
 title: Publisher
-description: We publish open data
+description: Publisher details
 permalink: /publisher/_key_
 layout: publisher-key
 ---

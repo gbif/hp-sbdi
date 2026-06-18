@@ -1,6 +1,6 @@
 ---
 title: Institutions
-description: We publish open data
+description: Institution search
 permalink: /institution/search
 layout: institution-search
 ---

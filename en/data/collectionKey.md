@@ -1,6 +1,6 @@
 ---
 title: Collection
-description: We publish open data
+description: Collection details
 permalink: /collection/_key_
 layout: collection-key
 ---

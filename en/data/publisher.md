@@ -1,6 +1,6 @@
 ---
 title: Publishers
-description: We publish open data
+description: Publisher search
 permalink: /publisher/search
 layout: publisher
 ---

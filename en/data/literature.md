@@ -1,6 +1,6 @@
 ---
 title: Literature
-description: We publish open data
+description: Literature search
 permalink: /literature/search
 layout: literature
 ---

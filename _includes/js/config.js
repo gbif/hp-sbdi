@@ -13,14 +13,41 @@ var siteConfig = {
       "id": "occurrenceKey"
     },
     {
+      "id": "collectionSearch"
+    },
+    {
+      "id": "collectionKey"
+    },
+    {
       "id": "datasetSearch"
     },
     {
       "id": "datasetKey"
-    }
+    },
+    {
+      "id": "institutionSearch"
+    },
+    {
+      "id": "institutionKey"
+    },
+    {
+      "id": "publisherSearch"
+    },
+    {
+      "id": "publisherKey"
+    },
+    {
+      "id": "literatureSearch"
+    },
   ],
   "disableInlineTableFilterButtons": false,
   "availableCatalogues": [
+    "OCCURRENCE",
+    "DATASET",
+    "COLLECTION",
+    "INSTITUTION",
+    "PUBLISHER",
+    "LITERATURE",
   ],
   "dataHeader": {
     "enableApiPopup": false,
@@ -62,21 +89,10 @@ var siteConfig = {
   },
   "languages": [
     {
-      "code": "se",
-      "localeCode": "sv",
-      "label": "Svenska",
-      "default": true,
-      "textDirection": "ltr",
-      "iso3LetterCode": "swe",
-      "cmsLocale": "en-GB",
-      "gbifOrgLocalePrefix": "",
-      "mapTileLocale": "en"
-    },
-    {
       "code": "en",
       "localeCode": "en",
       "label": "English",
-      "default": false,
+      "default": true,
       "textDirection": "ltr",
       "iso3LetterCode": "eng",
       "cmsLocale": "en-GB",
@@ -90,51 +106,44 @@ var siteConfig = {
       "type": "and",
       "predicates": [
         {
-          "type": "in",
-          "key": "occurrenceStatus",
-          "values": [
-            "PRESENT"
-          ]
+          "key": "publishingCountry",
+          "type": "equals",
+          "value": "SE"
         },
         {
-          "type": "in",
-          "key": "country",
-          "values": [
-            "SE"
+          "type": "and",
+          "predicates": [
+            {
+              "key": "country",
+              "type": "equals",
+              "value": "SE"
+            },
+            {
+              "key": "notIssues",
+              "type": "equals",
+              "value": "COUNTRY_COORDINATE_MISMATCH"
+            }
           ]
-        },
-        {
-          "type": "not",
-          "predicate": {
-            "type": "in",
-            "key": "issue",
-            "values": [
-              "COUNTRY_COORDINATE_MISMATCH"
-            ]
-          }
         }
       ]
     },
-    // "highlightedFilters": [
-    //   "taxonKey",
-    //   "verbatimScientificName",
-    //   "institutionKey",
-    //   "collectionKey",
-    //   "catalogNumber",
-    //   "recordedBy",
-    //   "identifiedBy"
-    // ],
+    "highlightedFilters": [
+      "taxonKey",
+      "verbatimScientificName",
+      "institutionKey",
+      "collectionKey",
+      "catalogNumber",
+      "recordedBy",
+      "identifiedBy"
+    ],
     "excludedFilters": [
       "occurrenceStatus",
       "networkKey",
       "hostingOrganizationKey",
       "protocol",
       "publishingCountry",
-      "country",
       "institutionCode",
-      "collectionCode",
-      "datasetId",
-      "datasetName",
+      "collectionCode"
     ],
     // "defaultEnabledTableColumns": [
     //   "features",
@@ -150,7 +159,7 @@ var siteConfig = {
       "table",
       "gallery",
       "map",
-      "clusters",
+      //"clusters",
       "dashboard",
       "download"
     ],
@@ -160,13 +169,57 @@ var siteConfig = {
       "zoom": 5.2438486
     }
   },
+  "collectionSearch": {
+    excludedFilters: ['country', 'active'],
+    // highlightedFilters: ['q', 'type', 'publishingOrg', 'license'],
+    // defaultTableColumns: ['title', 'description', 'publisher', 'type', 'occurrenceCount', 'literatureCount'],
+    scope: {
+      country: "SE",
+      active: true
+    },
+  },
+  "institutionSearch": {
+    excludedFilters: ['country', 'active'],
+    // highlightedFilters: ['q', 'type'],
+    // defaultTableColumns: ['title', 'type'],
+    scope: {
+      country: "SE",
+      active: true
+    }
+  },
   "datasetSearch": {
     excludedFilters: ['publishingCountry', 'networkKey', 'projectId', 'hostingOrg'],
     highlightedFilters: ['q', 'type', 'publishingOrg', 'license'],
     scope: {
-      // TODO: you should add a scope here if you need search to be limited to a subset
-      // search filters have the format {field: [values]}
       publishingCountry: ['SE']
     },
   },
+  "publisherSearch": {
+    excludedFilters: ['country'],
+    scope: {
+      country: "SE",
+      active: true
+    },
+  },
+  "literatureSearch": {
+    "scope": {
+      "type": "or",
+      "predicates": [
+          {
+              "type": "in",
+              "key": "countriesOfResearcher",
+              "values": [
+                  "SE"
+              ]
+          },
+          {
+              "type": "in",
+              "key": "countriesOfCoverage",
+              "values": [
+                  "SE"
+              ]
+          }
+      ]
+    }
+  }
 }
