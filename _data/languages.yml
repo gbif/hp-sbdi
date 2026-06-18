@@ -1,10 +1,10 @@
 # The translations on this page is machine generated and need a review
 en:
   label: English
-  archive_permalink: /en/post/
+  archive_permalink: /post/
 se:
   label: Svenska
-  archive_permalink: /post/
+  archive_permalink: /se/post/
 es:
   label: Español
   archive_permalink: /es/post/

@@ -1,7 +1,7 @@
 ---
 title: Occurrences
 description: Occurrence search
-permalink: /en/occurrence/search
+permalink: /occurrence/search
 lang-ref: occurrence
 layout: occurrence
 ---
