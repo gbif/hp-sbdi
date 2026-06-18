@@ -1,0 +1,24 @@
+{% assign event = include.event %}
+<article class="event-list-item-past mt-5">
+  <header>
+    <h3>
+      <a href="{{ event.url }}">{{ event.title }}</a>
+    </h3>
+    <div class="mt-2">
+      {%- include icons/calendar.html -%}
+      {%- include event-date.html event=event -%}
+    </div>
+    {% if event.location %}
+      <div>
+        {%- include icons/location-dot.html -%}
+        {{ event.location }}
+      </div>
+    {% endif %}
+    {% if event.contribution %}
+      <div>
+        {%- include icons/lightbulb.html -%}
+        {{ event.contribution }}
+      </div>
+    {% endif %}
+  </header>
+</article>

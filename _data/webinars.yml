@@ -1,0 +1,52 @@
+- title: SBDI in general
+  items:
+    - title: SBDI in a nutshell
+      link: https://youtu.be/LcSDzR86VNE
+      duration: 7 min
+      description: So, what is SBDI? In this short webinar, the acting director of the Swedish Biodiversity Data Infrastructure Fredrik Ronquist will give you a quick overview of SBDI, its services and partner networks.
+    - title: Overview of SBDI data & tools
+      link: https://youtu.be/-04HW-XKG_U
+      duration: 13 min
+      description: In this short webinar, our support officer Debora Arlt will walk you through some of the most important data services and analysis functions offered by SBDI.
+    - title: The SBDI support center
+      link: https://youtu.be/Z1TCwhiIILU
+      duration: 13 min
+      description: How can we help you? In this short webinar our Support coordinator Matthias Obst will give you an overview of how the SBDI Support center works and how SBDI interacts with the scientific user community.
+    - title: SBDI technical architecture
+      link: https://youtu.be/lyg22zYJ9ps
+      duration: 5 min
+      description: Take a look under the hood! In this short webinar, SBDI’s system architect Manash Shah explains how the infrastructure is designed and built to connect both national and international providers of biodiversity data.
+
+- title:  Genetic data and services
+  items:
+    - title: Introduction to genetic data services in SBDI
+      link: https://youtu.be/mELkheMjF1w
+      duration: 12 min
+      description: How does SBDI link to genetic data? In this webinar our molecular genetics expert Anders Andersson gives you a short overview of the genetic data services in SBDI. He also outlines the plan for further expenading these services.
+    - title: SBDI workflow for processing metabarcoding data
+      link: https://youtu.be/y6buFmrAbM4
+      duration: 24 min
+      description: Looking for a pipeline to process and publish your metabarcoding data? In this webinar our molecular genetics expert Daniel Lundin gives a demonstration of SBDI’s metabarcoding workflow.
+    - title: The Swedish ASV portal
+      link: https://youtu.be/9P1qcJqZQtA
+      duration: 17 min
+      description: In this webinar our molecular genetics expert Maria Pager introduces you to SBDI’s portal for access and publication of genetic data.
+
+- title: Data from biological monitoring programs
+  items:
+    - title: Marine data for long-term ecological research
+      link: https://youtu.be/b1Gs2_4Fu6g
+      duration: 20 min
+      description: Are you planning to analyze data from marine biological monitoring programs? In this webinar our marine data experts Lisa Sundqvist and Malin Werner explain how you can access marine data and time series in SBDI.
+    - title: Species and habitat data from terrestrial vegetation monitoring
+      link: https://youtu.be/A60CLC1TaWM
+      duration: 17 min
+      description: Are you planning to analyze data and time series from terrestrial vegetation monitoring programs? In this webinar our forest data expert Anna-Lena Axelsson explains what data SBDI can offer and how you can access these.
+    - title: Decades of data from monitoring birds, butterflies and mammals
+      link: https://youtu.be/99zqsGIxDzg
+      duration: 18 min
+      description: SBDI is linked to biological monitoring programs for birds, butterflies and mammals. In this webinar our data expert Annelie Maria Jönsson explains how to access data from these programs.
+    - title: BioCollect - a tool for systematic biodiversity data
+      link: https://youtu.be/0oIC8sBG2sc
+      duration: 11 min
+      description: Are you planing to set up your own monitoring program? In this webinar our database expert Aleksandra Magdziarek explains how to use the BioCollect tool to create a customized database for your own systematic monitoring project and publish the collected data through SBDI.

@@ -1,0 +1,46 @@
+---
+layout: default
+---
+
+<div class="news-list-header">
+  <h1>{{ page.title }}</h1>
+  <a href="/feed/news.xml">
+    <svg aria-hidden="true" fill="none" stroke="currentColor" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M12.75 19.5v-.75a7.5 7.5 0 00-7.5-7.5H4.5m0-6.75h.75c7.87 0 14.25 6.38 14.25 14.25v.75M6 18.75a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" stroke-linecap="round" stroke-linejoin="round"></path>
+    </svg> Feed
+  </a>
+</div>
+<div class="news-list">
+  {% assign news_list = site.news | reverse %}  
+  {% if page.year == 0 %}
+    {% assign news_list = news_list | slice: 0,50 %}
+  {% endif %}
+  {% for news in news_list %}
+    {% assign news_year = news.date | date: "%Y" | plus: 0 %}
+    {% if page.year == news_year or page.year == 0 %}
+      <article>
+        <div class="news-list-item-image" onclick="location.href='{{ news.url }}';" aria-hidden="true">
+          {% if news.image %}
+            <img src="/uploads/news/{{ news.image }}" alt="">
+          {% endif %}
+        </div>
+        <div class="news-list-item-text">
+          <header>
+            <h2 class="mt-0">
+              <a href="{{ news.url }}">{{ news.title }}</a>
+            </h2>
+            <div class="mt-2">
+              {{ news.date | date: "%b %d, %Y" }}
+            </div>
+          </header>
+          <p class="mt-4">
+            {% include preamble.html page=news %}
+          </p>
+          <footer>
+            <a href="{{ news.url }}" title="{{ news.title }}" class="link-icon">Read more</a>
+          </footer>
+        </div>
+      </article>
+    {% endif %}
+  {% endfor %}
+</div>

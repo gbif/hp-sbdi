@@ -1,0 +1,66 @@
+executive_office:
+  - name: Emma Granqvist
+    title: SBDI Director
+    affiliation: Swedish Museum of Natural History
+    affiliation_image: nrm-logo-staende-internationell-fullfarg_150px-1.jpg
+    email: director@biodiversitydata.se
+    phone: +46 8 519 541 26
+    image: emma.jpg
+
+  - name: Holger Dettki
+    title: SBDI Deputy Director
+    affiliation: Swedish University of Agricultural Sciences
+    affiliation_image: slu_logo_webb1-e1627376342839.png
+    email: director@biodiversitydata.se
+    phone: +46 18 67 25 74
+    image: holger.jpg
+
+  - name: Rasa Bukontaite
+    title: SBDI Project Coordinator
+    affiliation: Swedish Museum of Natural History
+    affiliation_image: nrm-logo-staende-internationell-fullfarg_150px-1.jpg
+    email: rasa.bukontaite@nrm.se
+    phone: +46 72 396 43 72
+    image: person.jpg
+
+  - name: Veronika A. Johansson
+    title: <a href="https://www.gbif.se">GBIF Sweden</a> Node Manager
+    affiliation: Swedish Museum of Natural History
+    affiliation_image: nrm-logo-staende-internationell-fullfarg_150px-1.jpg
+    email: veronika.johansson@nrm.se
+    phone: +46 8 519 540 36
+    image: veronika.jpg
+
+steering_committee:
+  - name: Anders Hamsten
+    affiliation: Senior advisor to the vice chancellor at LU
+  - name: Michaela Barth
+    affiliation: Royal Institute of Technology (KTH)
+  - name: Hanna Tornevall
+    affiliation: Gothenburg Botanical Garden 
+  - name: Hugo de Boer
+    affiliation: Natural History Museum, University of Oslo    
+  - name: Johan Wulff
+    affiliation: Naturvårdsverket/EPA
+  - name: Anne-Sophie Archambeau
+    affiliation: Muséum National d’Histoire naturelle (MNHN), Paris
+  - name: Joakim Appelquist
+    affiliation: The Royal Swedish Academy of Engineering Sciences (IVA)
+
+scientific_committee:
+  - name: Alexandre Antonelli
+    affiliation: Kew Gardens
+  - name: Alexander Ziska
+    affiliation: Philipps-University Marburg
+  - name: Francisco Hernandez
+    affiliation: VLIZ – Vlanders Marine Institute
+  - name: Donald Hobern
+    affiliation: International Barcode of Life Consortium
+  - name: Hanna Koivula
+    affiliation: CSC – IT Centre for Science
+  - name: Cynthia Parr
+    affiliation: Agricultural Research Service, US Department of Agriculture
+  - name: Helen Roy
+    affiliation: UK Centre for Ecology & Hydrology
+  - name: Pamela Soltis
+    affiliation: University of Florida, Gainesville
