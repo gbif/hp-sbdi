@@ -1,28 +1,19 @@
 ---
 lang-ref: home
 layout: home
-title: My headline
-description: Lorem markdownum spatium limes indefessus neque *at* orat aestuat
-background: /assets/images/placeholders/Chaetoceros-didymus_Ann-Turi-Skjevik-e1619680422383.jpg
-imageLicense: None for this image
+title: Swedish Biodiversity Data Infrastructure
+description: Open access to Sweden's biodiversity data and analysis tools
+background: /assets/images/Motacilla.flava_johan.backman_CC-BY-NC-scaled-e1619023368822.jpg
+imageLicense: Motacilla flava by Johan Bäckman (CC-BY-NC)
+
 height: 70vh
 cta:
-  - text: Förekomster
+  - text: Occurrences
     href: /occurrence/search
     isPrimary: true # this will break as it is illegal yaml
-  - text: Datamängder
+  - text: Datasets
     href: /dataset/search
+  - text: Publishers
+    href: /publisher/search
 permalink: /
 ---
-
-Edit `/home.md` to change the text.
-
-Lorem markdownum spatium limes indefessus neque *at* orat aestuat, quicquam ne
-flavusque omnibus, virginis socerque sparsos vidimus eundem. Sustinet **ramo
-pontum ut** avus quamquam de trabes vestemque cruorem tremor.
-
-Viscera mercibus isdem hebetarat undas! Iubet ora ire unum telis adicit, si
-Telephus *valent*, instructo refers. Ille **est resque**, sic ruris erit ante
-profana detegeret. Et cogor tractus arboribus prensurum praesens memorantur
-neque inplet iussus temeraria merui **fas ecce** aethera dixit fieretque [plura
-tollebat altius](http://virgineusque.net/est.html).

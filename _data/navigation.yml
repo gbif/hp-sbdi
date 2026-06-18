@@ -2,25 +2,34 @@
 # You should create one of these files for each language you support. E.g. /_data/es/navigation.yml for the spanish version of the menu
 # Links listed below will be included in your site's navbar (navigation at the top)
 
-- text: Data
+- text: Home
+  href: /
+- text: Explore data
   menu: 
-  - text: Förekomster
+  - text: Browse data
     href: /occurrence/search
-  - text: Datamängder
-    href: /dataset/search
-- text: Länkar
-  menu: # Dropdown menu (one level deep only)
-  - text: Bastema-demo
-    href: https://hp-base-theme.gbif-staging.org/
-  - text: Andra webbplatser som använder temat
-    href: https://github.com/gbif/?q=hp-&type=all&language=&sort=
-  - text: "---" # Divider to separate blocks of menu items (at least 3 "-")
-  - text: "Dokumentation" # Title for block of menu items
-  - text: Jekyll-dokumentation
-    href: https://jekyllrb.com/docs/pages/
-  - text: Markdown-handledning
-    href: https://guides.github.com/features/mastering-markdown/
-  - text: YAML-handledning
-    href: https://dev.to/paulasantamaria/introduction-to-yaml-125f
-- text: Nyheter
-  href: /news/
+  - text: "---"
+  - text: Tools and data
+    href: /explore-data/
+  - text: Programming and API:s
+    href: /explore-data/programming/
+  - text: Acknowledging SBDI
+    href: /explore-data/acknowledging-sbdi/
+- text: Publish data
+  href: /publish-data/
+- text: Events
+  menu:
+  - text: Our events
+    href: /events/
+  - text: Other events
+    href: /events/other/
+- text: Support
+  href: /support/
+- text: About
+  menu:
+  - text: Overview
+    href: /about/
+  - text: Organization
+    href: /about/organization/
+  - text: News
+    href: /news/
