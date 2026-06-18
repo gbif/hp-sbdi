@@ -1,12 +1,12 @@
 # This file is for building the local dev image
 
-FROM ruby:3.3
+FROM ruby:2.7
 
 WORKDIR /site
 
 COPY Gemfile* /site
-RUN gem update --system && gem cleanup
-RUN bundle install
+RUN gem cleanup
+RUN BUNDLE_FORCE_RUBY_PLATFORM=true bundle install
 
 ENV TZ=Europe/Stockholm
 
