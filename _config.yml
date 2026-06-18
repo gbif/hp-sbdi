@@ -99,6 +99,9 @@ exclude:
   - dev.Dockerfile
 
 collections:
+  events:
+    output: true
+    permalink: "/:collection/:year/:month/:slug/"
   courses:
     output: true
     sort_by: sort_order
@@ -118,6 +121,11 @@ defaults:
       layout: "post"
       permalink: "/post/:year/:slug/"   # Use /post/yyyy/{filename}/ as permalink for all posts
 
+  - scope:
+      path: ""
+      type: events
+    values:
+      layout: event-item
   - scope:
       path: ""
       type: courses
