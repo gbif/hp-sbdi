@@ -7,7 +7,7 @@ stop:
 restart: stop run
 
 rebuild: stop
-	docker build --no-cache --file dev.Dockerfile --tag biodiversitydata-se/hosted-portal-lab .
+	docker build --no-cache --file dev.Dockerfile --tag gbif/hp-sbdi-dev .
 	docker compose up --detach
 
 _clean-deps:
