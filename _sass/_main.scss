@@ -14,13 +14,25 @@ $box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 
 @import "theme/_main";
 
-// Navbar
-header.container {
+// Header
+header .header {
     padding-left: 3rem;
 }
-header.container a {
+header .header a {
     text-decoration: none;
 }
+
+header .beta-banner {
+    background-color: rgb(255, 197, 87);
+    padding: 0.8rem;
+}
+header .beta-banner div {
+    max-width: fit-content;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+// Navbar
 .navbar {
     padding-left: 20rem;
 }
