@@ -4,7 +4,7 @@ organize: false
 start_time: 2026-06-14
 end_time: 2026-06-19
 location: Davos, Switzerland
-image: 2026-06-14_World_Biodiversity_forum.png
+image: 2026-06-14_World_Biodiversity_forum.avif
 description: >
   Under the theme of Leading Transformation Together, the fourth edition of the World Biodiversity Forum WBF will take place from Sunday, 14 June to Friday, 19 June 2026 in Davos, Switzerland.
 ---
