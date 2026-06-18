@@ -99,6 +99,9 @@ exclude:
   - dev.Dockerfile
 
 collections:
+  news:
+    output: true
+    permalink: "/:collection/:year/:slug/"
   events:
     output: true
     permalink: "/:collection/:year/:month/:slug/"
@@ -121,6 +124,11 @@ defaults:
       layout: "post"
       permalink: "/post/:year/:slug/"   # Use /post/yyyy/{filename}/ as permalink for all posts
 
+  - scope:
+      path: ""
+      type: news
+    values:
+      layout: news-item
   - scope:
       path: ""
       type: events
