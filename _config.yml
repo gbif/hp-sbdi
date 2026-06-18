@@ -139,3 +139,8 @@ defaults:
       type: courses
     values:
       layout: course-item
+
+feed:
+  posts_limit: 50
+  collections:
+    - news
