@@ -5,13 +5,12 @@
 .event-list-item {
     display: flex;
     flex-direction: column;
-    margin-top: 0;
+    margin-top: 2rem;
     padding-bottom: 2rem;
     border-bottom: 4px solid oklch(92.9% 0.013 255.508);
 
     @include tablet {
         flex-direction: row;
-        margin-top: 2rem;
     }
 }
 

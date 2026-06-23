@@ -1,9 +1,16 @@
 header {
     .header {
         padding-left: 3rem;
+        display: flex;
 
-        a {
-            text-decoration: none;
+        span {
+            margin-left: 2rem;
+            align-self: flex-end;
+            font-size: 1.25rem;
+
+            a {
+                text-decoration: none;
+            }
         }
     }
     .beta-banner {
@@ -19,7 +26,9 @@ header {
 }
 
 .navbar {
-    padding-left: 20rem;
+    @include desktop {
+        padding-left: 20rem;
+    }
 }
 
 .navbar-logo {
@@ -29,7 +38,9 @@ header {
 .navbar--hasWhiteText .navbar-top-item:hover,
 .navbar--hasWhiteText .navbar-top-item:active,
 .navbar--hasWhiteText .navbar-top-item:focus {
-    background-color: $color-sbdi-dark-blue !important;
+    @include desktop {
+        background-color: $color-sbdi-dark-blue !important;
+    }
 }
 
 a.navbar-item, 
