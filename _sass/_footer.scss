@@ -1,0 +1,12 @@
+.footer {
+    padding: 0;
+}
+.footer-hostedby {
+    background-color: $color-sbdi-dark-blue;
+}
+.footer-groups .footer-column:first-child {
+    flex-grow: 1;
+}
+.footer-groups .footer-column {
+    margin: 0 24px 6px 24px;
+}

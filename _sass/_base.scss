@@ -1,0 +1,56 @@
+a, a:hover {
+    text-decoration: underline;
+}
+a.button, a.button:hover {
+    text-decoration: none;
+}
+
+dt, .content dt {
+    display: inline;
+    font-weight: 700;
+}
+dd, .content dd {
+    display: inline;
+    margin-left: 0.4rem;
+}
+dd:after {
+    content: "";
+    display: block;
+    margin-bottom: 0.6rem;
+}
+
+.link-icon {
+    background-image: url('/assets/images/link-icon.svg');
+    background-repeat: no-repeat;
+    padding-left: 1.75rem;
+    text-decoration: none;
+}
+.link-icon:hover {
+    text-decoration: underline;
+}
+
+.icon-default {
+    display: inline;
+    height: 1.25rem;
+    margin-right: 0.5rem;
+    margin-bottom: -0.25rem;
+}
+.icon-location-dot {
+    margin-right: 0.65rem;
+}
+.icon-lightbulb {
+    margin-right: 0.88rem;
+}
+
+.preamble {
+    color: oklch(37.2% 0.044 257.287);
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+.article {
+    max-width: 80rem;
+}
+.article--toc {
+    max-width: 100rem;
+}

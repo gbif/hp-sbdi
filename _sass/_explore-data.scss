@@ -1,0 +1,76 @@
+.explore-data--tags {
+    button {
+        background-color: oklch(92.8% 0.006 264.531);
+        border-radius: calc(infinity*1px);
+        padding: 0.3rem 0.8rem;
+        font-size: 1.0rem;
+        color: oklch(37.3% 0.034 259.733);
+        text-wrap: nowrap;
+        cursor: pointer;
+        border: none;
+        margin-inline: 0.2rem;
+        margin-block: 0.2rem;
+    }
+    button.active {
+        background-color: oklch(54.6% 0.245 262.881);
+        color: white;
+    }
+}
+
+.explore-data--tools {
+    margin-top: 2rem;
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 4rem;
+    row-gap: 2rem;
+
+    @include tablet {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        border: 1px solid oklch(86.9% 0.022 252.894);
+        border-radius: 8px;
+        cursor: pointer;
+
+        img {
+            height: 192px;
+            width: 100%;
+            object-fit: contain;
+            border-top-left-radius: 8px;
+            border-top-right-radius: 8px;
+        }
+        div {
+            flex-grow: 1;
+        }
+        h3 {
+            font-size: 1.3rem;
+            margin-top: 1rem;
+            margin-bottom: 0.5rem;
+
+            a {
+                color: $color-sbdi-dark-blue;
+                text-decoration: none;
+            }
+        }
+        .tool-description ul {
+            margin-top: 0.5rem;
+            line-height: 1.2rem;
+        }
+    }
+    article:hover {
+        background-color: oklch(96.8% 0.007 247.896);
+    }
+    footer {
+        font-size: 0.9rem;
+
+        span {
+            background-color: oklch(92.8% 0.006 264.531);
+            border-radius: calc(infinity*1px);
+            color: oklch(37.3% 0.034 259.733);
+            text-wrap: nowrap;
+        }
+    }
+}

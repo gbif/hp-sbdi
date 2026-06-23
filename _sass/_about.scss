@@ -1,0 +1,60 @@
+.about--logos {
+    display: grid; 
+    grid-template-columns: auto auto auto auto auto auto; 
+    column-gap: 24px; 
+    row-gap: 24px;
+
+    img {
+        max-width: 100%;
+        height: 150px;
+    }
+}
+
+.organizations--partners {
+    clear: both;
+    overflow: auto;
+
+    h3 {
+        margin-top: 2rem;
+    }
+    img {
+        float: left;
+        height: 100px;
+        margin-right: 16px;
+
+        @include desktop {
+            height: 150px;
+        }
+    }
+}
+
+.organizations--executive-office {
+    display: grid;
+    grid-template-columns: auto;
+    column-gap: 4rem;
+    row-gap: 2rem;
+
+    article {
+        max-width: 15.5rem;
+    }
+    img.person {
+        height: 225px;
+    }
+    h3 {
+        font-size: 1.3rem;
+        margin-bottom: 0.3rem;
+    }
+    .person-title {
+        font-style: italic;
+    }
+    .person-affiliation {
+        display: flex;
+    }
+    .person-affiliation img {
+        height: 80px;
+    }
+
+    @include tablet {
+        grid-template-columns: auto auto;
+    }
+}

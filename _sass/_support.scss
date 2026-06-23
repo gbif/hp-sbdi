@@ -1,0 +1,25 @@
+.support--courses {
+    article {
+        border-bottom: 4px solid oklch(92.9% 0.013 255.508);
+        margin-top: 2rem;
+        padding-bottom: 0.5rem;
+
+        h3 {
+            color: $color-sbdi-dark-blue;
+        }
+    }
+    article:last-child {
+        border-bottom: none;
+    }
+}
+
+.support--webinars {
+    article {
+        h4 {
+            color: $color-sbdi-dark-blue;
+        }
+        p {
+            margin-bottom: 1.3rem;
+        }
+    }
+}

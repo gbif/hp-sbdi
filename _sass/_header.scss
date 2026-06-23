@@ -1,0 +1,40 @@
+header {
+    .header {
+        padding-left: 3rem;
+
+        a {
+            text-decoration: none;
+        }
+    }
+    .beta-banner {
+        background-color: rgb(255, 197, 87);
+        padding: 0.8rem;
+
+        div {
+            max-width: fit-content;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
+}
+
+.navbar {
+    padding-left: 20rem;
+}
+
+.navbar-logo {
+    display: none;
+}
+
+.navbar--hasWhiteText .navbar-top-item:hover,
+.navbar--hasWhiteText .navbar-top-item:active,
+.navbar--hasWhiteText .navbar-top-item:focus {
+    background-color: $color-sbdi-dark-blue !important;
+}
+
+a.navbar-item, 
+a.navbar-item:hover, 
+a.navbar-link,
+a.navbar-link:hover {
+    text-decoration: none;
+}
