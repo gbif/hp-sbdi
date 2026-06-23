@@ -432,8 +432,42 @@ figure.news-detail-image {
     margin-top: 2rem;
     padding-top: 1rem;
 }
+/*
+.home--gbif-banner {
+    h2 {
+        font-size: 1.2rem;
+    }
+    @media screen and (min-width: 769px) {
+        h2 {
+            font-size: 1.5rem;
+        }
+    }
+    .banner {
+        position: relative;
 
+        img {
+            border-radius: 8px;
+        }
+    }
+    .text {
+        position: absolute;
+        inset: auto;
+        top: 0;
+        left: 0;
+        border-radius: 8px;
+        padding: 1rem 1rem 1rem 1rem;
+
+        h3 {
+            color: white;
+            font-size: 1.8rem;
+            font-weight: bold;
+        }
+    }
+}
+*/
 .home--logos {
+    margin-top: 2rem;
+
     h2 {
         font-size: 1.2rem;
     }
