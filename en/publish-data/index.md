@@ -6,7 +6,7 @@ permalink: /publish-data/
 # {{ page.title }}
 
 <p class="box">
-We love all kinds of biodiversity data! Please <a href="https://docs.biodiversitydata.se/support/">contact us</a> if you have data and we'll help you publish it in <a href="https://www.gbif.org/country/SE/publishing">GBIF</a> and <a href="https://collections.biodiversitydata.se/datasets">SBDI</a>.
+We love all kinds of biodiversity data! Please <a href="https://docs.biodiversitydata.se/support/">contact us</a> if you have data and we'll help you publish it in GBIF and SBDI.
 </p>
 
 ## Documentation

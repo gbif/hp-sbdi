@@ -13,10 +13,8 @@
 .organizations--partners {
     clear: both;
     overflow: auto;
+    margin-bottom: 2rem;
 
-    h3 {
-        margin-top: 2rem;
-    }
     img {
         float: left;
         height: 100px;
@@ -42,6 +40,7 @@
     }
     h3 {
         font-size: 1.3rem;
+        margin-top: 1rem !important;
         margin-bottom: 0.3rem;
     }
     .person-title {

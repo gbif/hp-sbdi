@@ -38,3 +38,7 @@ a.navbar-link,
 a.navbar-link:hover {
     text-decoration: none;
 }
+
+.toc a.active {
+    border-left: 3px solid $color-sbdi-iceblue;
+}

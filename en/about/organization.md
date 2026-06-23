@@ -27,11 +27,11 @@ The SBDI Executive Office (ExO) manages the daily business of SBDI and coordinat
     <img src="/uploads/people/{{ item.image }}" class="person" alt="Picture of {{ item.name }}">
     <h3>{{ item.name }}</h3>
     <div class="person-title">{{ item.title }}</div>
-    <div class="mt-3">{% include icons/envelope.html %}<a href="mailto:{{ item.email }}">{{ item.email }}</a></div>
+    <div class="mt-2">{% include icons/envelope.html %}<a href="mailto:{{ item.email }}">{{ item.email }}</a></div>
     {% if item.phone %}
       <div class="mt-1">{% include icons/phone.html %}<a href="tel:{{ item.phone }}">{{ item.phone }}</a></div>
     {% endif %}
-    <div class="person-affiliation mt-4">
+    <div class="person-affiliation mt-3">
       {{ item.affiliation }}
       <img src="/uploads/partners/{{ item.affiliation_image }}" alt="Logotype of {{ item.affiliation }}" aria-hidden="true">
     </div>

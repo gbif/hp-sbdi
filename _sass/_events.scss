@@ -1,3 +1,7 @@
+.event-list-item-past {
+    margin-top: 2rem;
+}
+
 .event-list-item {
     display: flex;
     flex-direction: column;
@@ -29,7 +33,7 @@
 }
 
 .event-list-item h3, .event-list-item-past h3 {
-    margin-top: 2.5rem;
+    font-size: 1.25rem;
     color: $color-sbdi-dark-blue;
 }
 
