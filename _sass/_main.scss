@@ -151,13 +151,11 @@ dd:after {
     grid-template-columns: auto;
     column-gap: 4rem;
     row-gap: 2rem;
-}
-@media screen and (min-width: 769px) {
-    .explore-data--tools {
+
+    @include tablet {
         grid-template-columns: repeat(2, minmax(0, 1fr));
     }
-}
-.explore-data--tools {
+
     article {
         display: flex;
         flex-direction: column;
@@ -211,9 +209,8 @@ dd:after {
     margin-top: 0;
     padding-bottom: 2rem;
     border-bottom: 4px solid oklch(92.9% 0.013 255.508);
-}
-@media screen and (min-width: 769px) {
-    .event-list-item {
+
+    @include tablet {
         flex-direction: row;
         margin-top: 2rem;
     }
@@ -224,9 +221,8 @@ dd:after {
     position: relative;
     text-align: center;
     cursor: pointer;
-}
-@media screen and (min-width: 769px) {
-    .event-list-item-image {
+
+    @include tablet {
         display: block;
         margin-right: 1.5rem;
     }
@@ -304,11 +300,10 @@ img.event-detail-image {
         float: left;
         height: 100px;
         margin-right: 16px;
-    }
-}
-@media screen and (min-width: 1024px) {
-    .organizations--partners img {
-        height: 150px;
+
+        @include desktop {
+            height: 150px;
+        }
     }
 }
 .organizations--executive-office {
@@ -336,9 +331,8 @@ img.event-detail-image {
     .person-affiliation img {
         height: 80px;
     }
-}
-@media screen and (min-width: 769px) {
-    .organizations--executive-office {
+
+    @include tablet {
         grid-template-columns: auto auto;
     }
 }
@@ -375,22 +369,20 @@ img.event-detail-image {
     margin-top: 2rem;
     padding-bottom: 2rem;
     border-bottom: 4px solid oklch(92.9% 0.013 255.508);
+
+    @include tablet {
+        flex-direction: row;
+    }
 }
 .news-list article:last-child {
     border-bottom: none;
-}
-@media screen and (min-width: 769px) {
-    .news-list article {
-        flex-direction: row;
-    }
 }
 .news-list-item-image {
     flex-basis: 25%;
     margin-bottom: 1rem;
     cursor: pointer;
-}
-@media screen and (min-width: 769px) {
-    .news-list-item-image {
+
+    @include tablet {
         margin-bottom: 0;
         margin-right: 2rem;
     }
@@ -436,9 +428,8 @@ figure.news-detail-image {
 .home--gbif-banner {
     h2 {
         font-size: 1.2rem;
-    }
-    @media screen and (min-width: 769px) {
-        h2 {
+
+        @include tablet {
             font-size: 1.5rem;
         }
     }
@@ -470,9 +461,8 @@ figure.news-detail-image {
 
     h2 {
         font-size: 1.2rem;
-    }
-    @media screen and (min-width: 769px) {
-        h2 {
+
+        @include tablet {
             font-size: 1.5rem;
         }
     }
