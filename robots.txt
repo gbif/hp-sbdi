@@ -18,3 +18,4 @@ Disallow: /data
 Disallow: /*/data
 
 crawl-delay: 0.1
+Sitemap: https://biodiversitydata.se/sitemap.xml
