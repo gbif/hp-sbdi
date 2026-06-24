@@ -18,6 +18,81 @@ cta:
 permalink: /
 ---
 
+<div class="home--news-events">
+
+  <!-- News -->
+  <article class="home--news">
+    <h2>News</h2>
+    {% assign latest_news = site.news | reverse %}
+    {% for news in latest_news limit:3 %}
+      <article>
+        <div onclick="location.href='{{ news.url }}';" aria-hidden="true">
+          {% if news.image %}
+            <img src="/uploads/news/{{ news.image }}" alt="">
+          {% endif %}
+        </div>
+        <div>
+          <header>
+            <h3>
+                <a href="{{ news.url }}">{{ news.title }}</a>
+            </h3>
+            <div>
+              {{ news.date | date: "%b %d, %Y" }}
+            </div>
+          </header>
+          <p class="mt-2">
+            {% include preamble.html page=news %}
+          </p>
+        </div>
+      </article>
+    {% endfor %}
+    <footer>
+      <a class="link-icon" href="/news/">See all news</a>
+    </footer>
+  </article>
+
+  <!-- Events -->
+  <article class="home--events">
+    <h2>Events</h2>
+    {% include functions/fetch-events.html event_type="upcoming" %}
+    {% for event in events limit:3 %}
+      <article>
+        <div onclick="location.href='{{ event.url }}';" aria-hidden="true">
+            {% if event.image %}
+              <img src="/uploads/events/{{ event.image }}" alt="">
+            {% endif %}
+        </div>
+        <div>
+          <header>
+            <h3>
+                <a href="{{ event.url }}">{{ event.title }}</a>
+            </h3>
+            <div>
+              {%- include icons/calendar.html -%}
+              {%- include event-date.html event=event -%}
+            </div>
+            {% if event.location %}
+              <div>
+                {%- include icons/location-dot.html -%}
+                {{ event.location }}
+              </div>
+            {% endif %}
+          </header>
+          <p class="mt-2">
+            {% include preamble.html page=event %}
+          </p>
+        </div>
+      </article>
+    {% else %}
+      <span>- No upcoming events -</span>
+    {% endfor %}
+    <footer>
+      <a class="link-icon" href="/events/">See {% if events != empty %}all{% else %}past{% endif %} events</a>
+    </footer>
+  </article>
+
+</div>
+
 <!-- GBIF banner -->
 <!--
 <article class="home--gbif-banner">

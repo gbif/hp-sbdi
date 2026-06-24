@@ -1,3 +1,148 @@
+.home--news-events {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 4rem;
+
+    @include desktop { 
+        flex-direction: row; 
+    }
+
+    .home--news {
+        flex-basis: 60%;
+
+        @include desktop {
+            border-right: 4px solid oklch(92.9% 0.013 255.508);
+            margin-right: 32px;
+            padding-right: 16px;
+        }
+
+        h2 { 
+            margin-bottom: 1.4rem;
+            font-size: 1.5rem;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3rem;
+
+            @include tablet {
+                flex-direction: row;
+            }
+
+            div:nth-child(1) {
+                flex-basis: 25%;
+                margin-bottom: 1rem;
+                cursor: pointer;
+
+                @include tablet {
+                    margin-bottom: 0;
+                }
+
+            }
+            
+            div:nth-child(2) {
+                flex-basis: 75%;
+
+                @include tablet {
+                    margin-left: 2rem;
+                }
+
+                h3 { 
+                    margin-top: 0;
+                    font-size: 1.2rem;
+
+                    a {
+                        color: $color-sbdi-dark-blue;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                div { 
+                    margin-left: 0;
+                    color: oklch(55.4% 0.046 257.417);
+                }
+            }
+        }
+
+        footer {
+            a {
+                font-size: 1.1rem;
+            }
+        }
+    }
+
+    .home--events {
+        flex-basis: 40%;
+        margin-top: 3rem;
+
+        @include desktop {
+            margin-top: 0;
+        }
+
+        h2 { 
+            margin-bottom: 1.4rem;
+            font-size: 1.5rem;
+        }
+
+        article {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 3rem;
+
+            @include tablet {
+                flex-direction: row;
+            }
+
+            div:nth-child(1) {
+                flex-basis: 25%;
+                margin-bottom: 1rem;
+                cursor: pointer;
+
+                @include tablet {
+                    margin-bottom: 0;
+                }
+            }
+            
+            div:nth-child(2) {
+                flex-basis: 75%;
+
+                @include tablet {
+                    margin-left: 2rem;
+                }
+
+                h3 { 
+                    margin-top: 0;
+                    font-size: 1.2rem;
+
+                    a {
+                        color: $color-sbdi-dark-blue;
+                        text-decoration: none;
+                        &:hover {
+                            text-decoration: underline;
+                        }
+                    }
+                }
+
+                div { 
+                    margin-left: 0;
+                    color: oklch(55.4% 0.046 257.417);
+                }
+            }
+        }
+
+        footer {
+            a {
+                font-size: 1.1rem;
+            }
+        }
+    }
+}
+
+
 /*
 .home--gbif-banner {
     h2 {
@@ -35,7 +180,7 @@
     margin-top: 2rem;
 
     h2 {
-        font-size: 1.2rem;
+        font-size: 1.4rem;
 
         @include tablet {
             font-size: 1.5rem;
