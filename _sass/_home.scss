@@ -1,3 +1,11 @@
+.fade {
+    opacity: 0;
+    transition: opacity 1s ease-in-out;
+}
+.fade.show {
+    opacity: 1;
+}
+
 .home--news-events {
     display: flex;
     flex-direction: column;
