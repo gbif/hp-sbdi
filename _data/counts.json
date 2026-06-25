@@ -1,0 +1,24 @@
+[
+  {
+    "title": "Occurrence records",
+    "url": "/occurrence/search"
+  },
+  {
+    "title": "Datasets",
+    "url": "/dataset/search"
+  },
+  {
+    "title": "Publishers",
+    "url": "/publisher/search"
+  },
+  {
+    "title": "Biologging datasets",
+    "url": "https://biologging.biodiversitydata.se/datasetOverview",
+    "count": 7
+  },
+  {
+    "title": "ASV datasets",
+    "url": "https://asv-portal.biodiversitydata.se/download",
+    "count": 23
+  }
+]

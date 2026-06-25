@@ -25,12 +25,28 @@ permalink: /
       <p>
         SDBI aggregates biodiversity data from multiple sources and makes it available and usable online. It is the largest collection of freely available biodiversity data in Sweden.
       </p>
+      <div>
+      {% for item in site.data.counts %}
+        <a href="{{ item.url }}">
+          <span>{% if item.count %}{% include number-format.html number=item.count decimals=0 ts="," %}{% else %}-{% endif %}</span>
+          <span>{{ item.title }}</span>
+        </a>
+      {% endfor %}
+      </div>
     </div>
     <div class="data-grid-item data-grid-families">
       <h2>Making the most of biodiversity data</h2>
       <p>
         Biodiversity data about plants, animals and fungi and their habitats may be used to educate and inform and in environmental decision-making, state of the environment assessments and restoration and rewilding.
       </p>
+      <div>
+      {% for item in site.data.families %}
+        <a href="{{ item.url }}">
+          <span>{% if item.count %}{% include number-format.html number=item.count decimals=0 ts="," %}{% else %}-{% endif %}</span>
+          <span>{{ item.title }}</span>
+        </a>
+      {% endfor %}
+      </div>
     </div>
   </div>
 </article>

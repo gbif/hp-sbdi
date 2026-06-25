@@ -50,6 +50,29 @@
             font-weight: 300;
             font-size: 1.1rem;
         }
+
+        div {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+
+            a {
+                display: block;
+                margin: 0.5rem;
+                padding: 0.5rem 0.75rem 0.5rem 0.75rem;
+                border-radius: 0.5rem;
+                color: white;
+                text-decoration: none;
+
+                span {
+                    display: block;
+                }
+
+                span:nth-child(1) {
+                    font-size: 1.2rem;
+                }
+            }
+        }
     }
 
     .data-grid-counts {
@@ -62,6 +85,15 @@
             border-top-right-radius: 0;
             border-bottom-left-radius: 0.5rem;
         }
+
+        a {
+            background-color: oklch(38.6% 0.063 188.416);
+
+            &:hover {
+                background-color: white;
+                color: $color-sbdi-bluegreen;
+            }
+        }
     }
 
     .data-grid-families {
@@ -73,6 +105,15 @@
         @include desktop {
             border-top-right-radius: 0.5rem;
             border-bottom-left-radius: 0;
+        }
+
+        a {
+            background-color: oklch(29.3% 0.066 243.157);
+
+            &:hover {
+                background-color: white;
+                color: $color-sbdi-darkblue;
+            }
         }
     }
 }
