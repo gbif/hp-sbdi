@@ -1,34 +1,34 @@
 [
   {
     "title": "Animalia",
-    "url": "/occurrence/search?taxonKey=1"
+    "id": "1"
   },
   {
     "title": "Plantae",
-    "url": "/occurrence/search?taxonKey=6"
+    "id": "6"
   },
   {
     "title": "Fungi",
-    "url": "/occurrence/search?taxonKey=5"
+    "id": "5"
   },
   {
     "title": "Archaea",
-    "url": "/occurrence/search?taxonKey=2"
+    "id": "2"
   },
   {
     "title": "Bacteria",
-    "url": "/occurrence/search?taxonKey=3"
+    "id": "3"
   },
   {
     "title": "Chromista",
-    "url": "/occurrence/search?taxonKey=6"
+    "id": "4"
   },
   {
     "title": "Protozoa",
-    "url": "/occurrence/search?taxonKey=7"
+    "id": "7"
   },
   {
     "title": "Viruses",
-    "url": "/occurrence/search?taxonKey=8"
+    "id": "8"
   }
 ]

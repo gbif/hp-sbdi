@@ -28,7 +28,9 @@ permalink: /
       <div>
       {% for item in site.data.counts %}
         <a href="{{ item.url }}">
-          <span>{% if item.count %}{% include number-format.html number=item.count decimals=0 ts="," %}{% else %}-{% endif %}</span>
+          <span {% if item.id %}id="{{ item.id }}"{% endif %}>
+            {% if item.count %}{% include number-format.html number=item.count decimals=0 ts="," %}{% else %}-{% endif %}
+          </span>
           <span>{{ item.title }}</span>
         </a>
       {% endfor %}
@@ -41,8 +43,8 @@ permalink: /
       </p>
       <div>
       {% for item in site.data.families %}
-        <a href="{{ item.url }}">
-          <span>{% if item.count %}{% include number-format.html number=item.count decimals=0 ts="," %}{% else %}-{% endif %}</span>
+        <a href="/occurrence/search?taxonKey={{ item.id }}">
+          <span id="family-{{ item.id }}-count">-</span>
           <span>{{ item.title }}</span>
         </a>
       {% endfor %}
@@ -152,6 +154,40 @@ permalink: /
     </a>
   </div>
 </article>
+
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    fetchOccurrenceCounts();
+  });
+
+  const fetchOccurrenceCounts = async() => {
+    var result = await fetch_json('https://api.gbif.org/v1/occurrence/count?publishingCountry=SE')
+    updateElement('occurrence-count', result);
+    
+    result = await fetch_json('https://api.gbif.org/v1/dataset/search?publishingCountry=SE&limit=500');
+    updateElement('dataset-count', result.count)
+
+    result = await fetch_json('https://api.gbif.org/v1/organization?country=SE&limit=100');
+    updateElement('publisher-count', result.count)
+
+    result = await fetch_json('https://api.gbif.org/v1/occurrence/search?publishingCountry=SE&limit=0&facet=kingdomKey');
+    result.facets[0].counts.forEach(item => {
+      updateElement('family-' + item.name + '-count', item.count);
+    });
+  }
+
+  const fetch_json = async(url) => {
+    const response = await fetch(url);
+    return await response.json();
+  }
+
+  const updateElement = (id, value) => {
+    const element = document.getElementById(id);
+    if (element) {
+      element.innerText = parseInt(value).toLocaleString('en-GB');
+    }
+  }
+</script>
 
 <!--
 <script>

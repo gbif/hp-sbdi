@@ -1,15 +1,18 @@
 [
   {
-    "title": "Occurrence records",
-    "url": "/occurrence/search"
+    "title": "Occurrences",
+    "url": "/occurrence/search",
+    "id": "occurrence-count"
   },
   {
     "title": "Datasets",
-    "url": "/dataset/search"
+    "url": "/dataset/search",
+    "id": "dataset-count"
   },
   {
     "title": "Publishers",
-    "url": "/publisher/search"
+    "url": "/publisher/search",
+    "id": "publisher-count"
   },
   {
     "title": "Biologging datasets",
