@@ -7,7 +7,7 @@
     flex-direction: column;
     margin-top: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 4px solid oklch(92.9% 0.013 255.508);
+    border-bottom: 4px solid $color-slate-200;
 
     @include tablet {
         flex-direction: row;
@@ -33,7 +33,7 @@
 
 .event-list-item h3, .event-list-item-past h3 {
     font-size: 1.25rem;
-    color: $color-sbdi-dark-blue;
+    color: $color-sbdi-darkblue;
 }
 
 .event-list-item h3 a, .event-list-item-past h3 a {
@@ -44,11 +44,11 @@
 }
 
 .event-list-item div, .event-list-item-past div {
-    color: oklch(44.6% 0.043 257.281);
+    color: $color-slate-600;
 }
 
 header.event-detail {
-    color: oklch(44.6% 0.043 257.281);
+    color: $color-slate-600;
 }
 
 img.event-detail-image {

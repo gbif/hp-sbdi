@@ -19,7 +19,7 @@
         flex-basis: 60%;
 
         @include desktop {
-            border-right: 4px solid oklch(92.9% 0.013 255.508);
+            border-right: 4px solid $color-slate-200;
             margin-right: 32px;
             padding-right: 16px;
         }
@@ -61,7 +61,7 @@
                     font-size: 1.2rem;
 
                     a {
-                        color: $color-sbdi-dark-blue;
+                        color: $color-sbdi-darkblue;
                         text-decoration: none;
                         &:hover {
                             text-decoration: underline;
@@ -71,7 +71,7 @@
 
                 div { 
                     margin-left: 0;
-                    color: oklch(55.4% 0.046 257.417);
+                    color: $color-slate-500;
                 }
             }
         }
@@ -127,7 +127,7 @@
                     font-size: 1.2rem;
 
                     a {
-                        color: $color-sbdi-dark-blue;
+                        color: $color-sbdi-darkblue;
                         text-decoration: none;
                         &:hover {
                             text-decoration: underline;
@@ -137,7 +137,7 @@
 
                 div { 
                     margin-left: 0;
-                    color: oklch(55.4% 0.046 257.417);
+                    color: $color-slate-500;
                 }
             }
         }

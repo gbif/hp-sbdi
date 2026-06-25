@@ -1,11 +1,11 @@
 .support--courses {
     article {
-        border-bottom: 4px solid oklch(92.9% 0.013 255.508);
+        border-bottom: 4px solid $color-slate-200;
         margin-top: 2rem;
         padding-bottom: 0.5rem;
 
         h3 {
-            color: $color-sbdi-dark-blue;
+            color: $color-sbdi-darkblue;
             font-size: 1.2rem;
         }
     }
@@ -17,7 +17,7 @@
 .support--webinars {
     article {
         h4 {
-            color: $color-sbdi-dark-blue;
+            color: $color-sbdi-darkblue;
             font-size: 1.1rem;
         }
         p {

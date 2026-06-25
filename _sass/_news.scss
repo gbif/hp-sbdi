@@ -9,8 +9,8 @@
     a {
         padding: 0.2rem 0.5rem;
         margin-bottom: 1rem;
-        background-color: oklch(96.8% 0.007 247.896);
-        color: oklch(37.2% 0.044 257.287);
+        background-color: $color-slate-100;
+        color: $color-slate-700;
         font-size: 1.1rem;
         text-decoration: none;
         box-shadow: 0 1px 3px 0 rgba(0,0,0,.1),0 1px 2px -1px rgba(0,0,0,.1)
@@ -30,7 +30,7 @@
     flex-direction: column;
     margin-top: 2rem;
     padding-bottom: 2rem;
-    border-bottom: 4px solid oklch(92.9% 0.013 255.508);
+    border-bottom: 4px solid $color-slate-200;
 
     @include tablet {
         flex-direction: row;
@@ -57,7 +57,7 @@
     h2 {
         margin-top: 0;
         font-size: 1.5rem;
-        color: $color-sbdi-dark-blue;
+        color: $color-sbdi-darkblue;
 
         a {
             text-decoration: none;
@@ -67,7 +67,7 @@
         }
     }
     div {
-        color: oklch(55.4% 0.046 257.417)
+        color: $color-slate-500;
     }
 }
 
@@ -79,14 +79,14 @@ figure.news-detail-image {
     }
     figcaption {
         font-size: 0.9rem;
-        color: oklch(55.4% 0.046 257.417);
+        color: $color-slate-500;
     }
 }
 
 .news-detail-footer {
     font-size: 0.9rem;
-    color: oklch(55.4% 0.046 257.417);
-    border-top: 4px solid oklch(92.9% 0.013 255.508);
+    color: $color-slate-500;
+    border-top: 4px solid $color-slate-200;
     margin-top: 2rem;
     padding-top: 1rem;
 }

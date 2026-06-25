@@ -1,10 +1,10 @@
 .explore-data--tags {
     button {
-        background-color: oklch(92.8% 0.006 264.531);
+        background-color: $color-gray-200;
         border-radius: calc(infinity*1px);
         padding: 0.3rem 0.8rem;
         font-size: 1.0rem;
-        color: oklch(37.3% 0.034 259.733);
+        color: $color-gray-700;
         text-wrap: nowrap;
         cursor: pointer;
         border: none;
@@ -31,7 +31,7 @@
     article {
         display: flex;
         flex-direction: column;
-        border: 1px solid oklch(86.9% 0.022 252.894);
+        border: 1px solid $color-slate-300;
         border-radius: 8px;
         cursor: pointer;
 
@@ -51,7 +51,7 @@
             margin-bottom: 0.5rem;
 
             a {
-                color: $color-sbdi-dark-blue;
+                color: $color-sbdi-darkblue;
                 text-decoration: none;
             }
         }
@@ -61,15 +61,15 @@
         }
     }
     article:hover {
-        background-color: oklch(96.8% 0.007 247.896);
+        background-color: $color-slate-100;
     }
     footer {
         font-size: 0.9rem;
 
         span {
-            background-color: oklch(92.8% 0.006 264.531);
+            background-color: $color-gray-200;
             border-radius: calc(infinity*1px);
-            color: oklch(37.3% 0.034 259.733);
+            color: $color-gray-700;
             text-wrap: nowrap;
         }
     }
