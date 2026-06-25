@@ -4,18 +4,10 @@
       link: https://youtu.be/LcSDzR86VNE
       duration: 7 min
       description: So, what is SBDI? In this short webinar, the acting director of the Swedish Biodiversity Data Infrastructure Fredrik Ronquist will give you a quick overview of SBDI, its services and partner networks.
-    - title: Overview of SBDI data & tools
-      link: https://youtu.be/-04HW-XKG_U
-      duration: 13 min
-      description: In this short webinar, our support officer Debora Arlt will walk you through some of the most important data services and analysis functions offered by SBDI.
     - title: The SBDI support center
       link: https://youtu.be/Z1TCwhiIILU
       duration: 13 min
       description: How can we help you? In this short webinar our Support coordinator Matthias Obst will give you an overview of how the SBDI Support center works and how SBDI interacts with the scientific user community.
-    - title: SBDI technical architecture
-      link: https://youtu.be/lyg22zYJ9ps
-      duration: 5 min
-      description: Take a look under the hood! In this short webinar, SBDI’s system architect Manash Shah explains how the infrastructure is designed and built to connect both national and international providers of biodiversity data.
 
 - title:  Genetic data and services
   items:

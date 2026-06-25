@@ -5,7 +5,7 @@ permalink: /explore-data/
 ---
 # {{ page.title }}
 
-Here we list and describe all SBDI tools and portals that can be used to explore, download, and analyze biodiversity data. Our core tools and data access functionality is based on Living Atlases technology, but we also provide several specialized tools which are also linked to below.
+Here we list and describe all SBDI tools and portals that can be used to explore, download, and analyze biodiversity data. Our core data access functionality is based on GBIF hosted portal technology, but we also provide several specialized tools which are also linked to below.
 
 <section class="explore-data--tags" aria-label="Tag filter">
   <p>You can filter the list by selecting one of the tags:</p>

@@ -5,10 +5,11 @@
   image: bioatlas.jpg
   image-style: "object-fit: cover"
   description: >-
-    Find and access Swedish biodiversity data:
+    Find and access core Swedish biodiversity data:
     <ul>
-      <li>Browse data providers and datasets</li>
-      <li>A search interface: search for data</li>
+      <li>Occurence records</li>
+      <li>Datasets</li>
+      <li>Data providers</li>
     </ul>
   link: /occurrence/search
 
