@@ -26,7 +26,7 @@ description: >-
   to make biodiversity data available and accessible for research, education,
   and conservation.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "https://sbdi.hp.gbif.org/" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://sbdi.hp.gbif.org" # the base hostname & protocol for your site, e.g. http://example.com
 
 # SOCIAL PROFILES that will show in the footer
 email: support@biodiversitydata.se                                      # Social icon in footer
