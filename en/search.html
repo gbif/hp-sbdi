@@ -1,0 +1,74 @@
+---
+layout: default
+title: Search
+permalink: /:basename/
+load_search: true
+---
+
+<h1>Search website</h1>
+
+<p>Here you can search the pages of this website. If you want to search or browse biodiversity data, <a href="/occurrence/search">start here</a>.</p>
+
+<section role="search">
+  <input id="search-input" type="text" placeholder="Search SBDI website...">
+  <button class="button is-primary" onclick="search()">
+    Search
+  </button>
+</section>
+
+<ul id="results-container"></ul>
+
+<script>
+  var simpleSearch = undefined;
+
+  window.addEventListener('popstate', event => updateResultFromUrl());
+
+  document.addEventListener('DOMContentLoaded', () => {
+
+    simpleSearch = SimpleJekyllSearch({
+      searchInput: document.getElementById('search-input'),
+      resultsContainer: document.getElementById('results-container'),
+      json: '/assets/zzz-search.json',
+      searchResultTemplate: 
+        '<li class="p-1 mt-2 rounded hover:bg-slate-100 cursor-pointer" onclick="location.href=\'{url}\';" aria-label="{title}">' + 
+          '<a href="{url}" class="text-xl">{title}</a>' + 
+          '<br>{description}' + 
+        '</li>',
+      limit: 100,
+      debounceTime: 60000, // This is to effectively disable the search-on-keypress functionality
+    });
+
+    const input = document.getElementById('search-input');
+    input.addEventListener('keypress', event => {
+      if (event.key === 'Enter') {
+        event.preventDefault();
+        search();
+      }
+    });
+    input.focus();
+
+    updateResultFromUrl();
+  });
+
+  // Update the search result from the query string parameter on the current page url
+  const updateResultFromUrl = () => {
+    const query = new URL(location).searchParams.get('query');
+    const input = document.getElementById('search-input');
+    input.value = query;
+    if (query) {
+      setTimeout(() => {simpleSearch.search(query)}, 100);
+    } else {
+      document.getElementById('results-container').innerHTML = '';
+    }
+  }
+
+  // Perform search and push the query on the url
+  const search = () => {
+    const query = document.getElementById('search-input').value;
+    const newUrl = new URL(location);
+    newUrl.searchParams.set('query', query);
+    window.history.pushState({}, '', newUrl);
+    simpleSearch.search(query);
+  }
+</script>
+

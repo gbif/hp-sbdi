@@ -1,0 +1,29 @@
+#search-input {
+    width: 200px;
+    height: 2.5rem;
+    margin-right: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
+    border: solid 1px $color-sbdi-lightblue;
+    border-radius: 0.375rem;
+    font-size: 1.0rem;
+
+    &:focus {
+        outline-color: $color-sbdi-dark-blue;
+    }
+
+    @include tablet {
+        width: 384px;
+    }
+}
+
+#results-container {
+    margin-top: 2rem;
+    margin-left: 0;
+    list-style-type: none;
+    list-style-position: inside;
+
+    li {
+        margin-bottom: 1.1rem;
+    }
+}

@@ -2,6 +2,8 @@
 
 // Variables
 $color-sbdi-dark-blue: #284966;
+$color-sbdi-blue: #6691a4;
+$color-sbdi-lightblue: #94a5b2;
 $color-sbdi-iceblue: #abccc7;
 
 // Overrides
@@ -24,3 +26,4 @@ $box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.1);
 @import "_support";
 @import "_about";
 @import "_news";
+@import "_search";
