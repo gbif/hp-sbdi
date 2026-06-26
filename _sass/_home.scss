@@ -8,14 +8,6 @@
     }
 }
 
-.fade {
-    opacity: 0;
-    transition: opacity 1s ease-in-out;
-}
-.fade.show {
-    opacity: 1;
-}
-
 .content .home--data-grid {
     display: flex;
     flex-direction: column;
