@@ -1,8 +1,5 @@
-a, a:hover {
+.content a:not(.button), .content a:not(.button):hover {
     text-decoration: underline;
-}
-a.button, a.button:hover {
-    text-decoration: none;
 }
 
 dt, .content dt {

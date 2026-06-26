@@ -43,10 +43,10 @@ var siteConfig = {
   "disableInlineTableFilterButtons": false,
   "availableCatalogues": [
     "OCCURRENCE",
+    "PUBLISHER",
     "DATASET",
     "COLLECTION",
     "INSTITUTION",
-    "PUBLISHER",
     "LITERATURE",
   ],
   "dataHeader": {
@@ -103,7 +103,7 @@ var siteConfig = {
   "messages": {},
   "occurrenceSearch": {
     "scope": {
-      "type": "and",
+      "type": "or",
       "predicates": [
         {
           "key": "publishingCountry",
@@ -128,16 +128,14 @@ var siteConfig = {
       ]
     },
     "highlightedFilters": [
+      "occurrenceStatus",
       "taxonKey",
-      "verbatimScientificName",
-      "institutionKey",
-      "collectionKey",
-      "catalogNumber",
-      "recordedBy",
-      "identifiedBy"
+      "year",
+      "country",
+      "issue",
+      "geometry"
     ],
     "excludedFilters": [
-      "occurrenceStatus",
       "networkKey",
       "hostingOrganizationKey",
       "protocol",
@@ -159,7 +157,7 @@ var siteConfig = {
       "table",
       "gallery",
       "map",
-      //"clusters",
+      "clusters",
       "dashboard",
       "download"
     ],
@@ -189,7 +187,7 @@ var siteConfig = {
   },
   "datasetSearch": {
     excludedFilters: ['publishingCountry', 'networkKey', 'projectId', 'hostingOrg'],
-    highlightedFilters: ['q', 'type', 'publishingOrg', 'license'],
+    highlightedFilters: ['q', 'type', 'publishingOrg', 'license', 'dwcaExtension'],
     scope: {
       publishingCountry: ['SE']
     },
