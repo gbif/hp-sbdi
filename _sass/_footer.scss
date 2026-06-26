@@ -7,10 +7,11 @@
 }
 
 .footer-groups {
-    .footer-column:first-child {
-        flex-grow: 1;
-    }
     .footer-column {
         margin: 0 24px 6px 24px;
+
+        &:first-child {
+            flex-grow: 1;
+        }
     }
 }

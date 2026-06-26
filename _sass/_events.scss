@@ -36,11 +36,12 @@
     color: $color-sbdi-darkblue;
 }
 
-.event-list-item h3 a, .event-list-item-past h3 a {
+.content .event-list-item h3 a, .content .event-list-item-past h3 a {
     text-decoration: none;
-}
-.event-list-item h3 a:hover, .event-list-item-past h3 a:hover {
-    text-decoration: underline;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .event-list-item div, .event-list-item-past div {

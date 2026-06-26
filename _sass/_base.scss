@@ -1,5 +1,9 @@
-.content a:not(.button), .content a:not(.button):hover {
+.content a:not(.button, .link-icon) {
     text-decoration: underline;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 dt, .content dt {
@@ -9,11 +13,12 @@ dt, .content dt {
 dd, .content dd {
     display: inline;
     margin-left: 0.4rem;
-}
-dd:after {
-    content: "";
-    display: block;
-    margin-bottom: 0.6rem;
+
+    &:after {
+        content: "";
+        display: block;
+        margin-bottom: 0.6rem;
+    }
 }
 
 .link-icon {
@@ -21,9 +26,10 @@ dd:after {
     background-repeat: no-repeat;
     padding-left: 1.75rem;
     text-decoration: none;
-}
-.link-icon:hover {
-    text-decoration: underline;
+
+    &:hover {
+        text-decoration: underline;
+    }
 }
 
 .icon-default {

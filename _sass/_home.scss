@@ -16,7 +16,7 @@
     opacity: 1;
 }
 
-.home--data-grid {
+.content .home--data-grid {
     display: flex;
     flex-direction: column;
     margin-bottom: 3rem;
@@ -63,6 +63,10 @@
                 border-radius: 0.5rem;
                 color: white;
                 text-decoration: none;
+
+                &:hover {
+                    text-decoration: none;
+                }
 
                 span {
                     display: block;
