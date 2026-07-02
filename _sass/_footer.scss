@@ -13,5 +13,10 @@
         &:first-child {
             flex-grow: 1;
         }
+
+        a:hover {
+            text-decoration: underline;
+            background-color: inherit;
+        }
     }
 }

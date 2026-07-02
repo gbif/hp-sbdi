@@ -55,5 +55,16 @@ dd, .content dd {
     max-width: 80rem;
 }
 .article--toc {
-    max-width: 100rem;
+    max-width: 80rem;
+
+    .article {
+
+        @include desktop {
+            width: 80%;
+        }
+    }
+}
+.toc-wrapper {
+    max-width: none;
+    width: 20%;
 }
