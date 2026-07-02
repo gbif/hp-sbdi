@@ -78,11 +78,12 @@ var siteConfig = {
   "maps": {
     "mapStyles": {
       "defaultProjection": "MERCATOR",
-      "defaultMapStyle": "BRIGHT",
+      "defaultMapStyle": "NATURAL",
       "options": {
         "MERCATOR": [
+          "NATURAL",
           "BRIGHT",
-          "NATURAL"
+          "DARK"
         ]
       }
     }
@@ -139,7 +140,7 @@ var siteConfig = {
       "networkKey",
       "hostingOrganizationKey",
       "protocol",
-      "publishingCountry",
+      //"publishingCountry",
       "institutionCode",
       "collectionCode"
     ],
