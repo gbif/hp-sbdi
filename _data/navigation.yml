@@ -6,8 +6,12 @@
   href: /
 - text: Explore data
   menu: 
-  - text: Browse data
+  - text: Occurrences
     href: /occurrence/search
+  - text: Publishers
+    href: /publisher/search
+  - text: Datasets
+    href: /dataset/search
   - text: "---"
   - text: Tools and data
     href: /explore-data/
