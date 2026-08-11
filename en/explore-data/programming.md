@@ -5,6 +5,6 @@ permalink: /explore-data/:basename/
 ---
 # {{ page.title }}
 
-For accessing biodiversity data programatically SBDI recommends using [rgbif](https://www.gbif.org/tool/81747/rgbif) or [pygbif](https://www.gbif.org/tool/OlyoYyRbKCSCkMKIi4oIT/pygbif-gbif-python-client) provided by [GBIF](https://www.gbif.org) or [galah](https://galah.ala.org.au/) provided by [Atlas of Living Australia](https://ala.org.au).
+For accessing biodiversity data programatically SBDI recommends using [GBIF tools and API:s](https://techdocs.gbif.org/en/).
 
-The data can also be accessed using [GBIF API:s](https://techdocs.gbif.org/en/openapi/).
+Another alternative is to use [galah](https://galah.ala.org.au/) provided by [Atlas of Living Australia](https://ala.org.au).
