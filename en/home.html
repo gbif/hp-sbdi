@@ -161,23 +161,64 @@ permalink: /
   });
 
   const fetchOccurrenceCounts = async() => {
-    var result = await fetch_json('https://api.gbif.org/v1/occurrence/count?publishingCountry=SE')
-    updateElement('occurrence-count', result);
-    
-    result = await fetch_json('https://api.gbif.org/v1/dataset/search?publishingCountry=SE&limit=500');
-    updateElement('dataset-count', result.count)
+    const dataset = await fetchJson('https://api.gbif.org/v1/dataset/search?publishingCountry=SE&limit=0');
+    updateElement('dataset-count', dataset.count)
 
-    result = await fetch_json('https://api.gbif.org/v1/organization?country=SE&limit=100');
-    updateElement('publisher-count', result.count)
+    const publisher = await fetchJson('https://api.gbif.org/v1/organization?country=SE&limit=0');
+    updateElement('publisher-count', publisher.count)
 
-    result = await fetch_json('https://api.gbif.org/v1/occurrence/search?publishingCountry=SE&limit=0&facet=kingdomKey');
-    result.facets[0].counts.forEach(item => {
+    const predicateQuery = {
+      "limit": 0,
+      "facets": ["KINGDOM_KEY"],
+      "predicate": {
+        "type": "or",
+        "predicates": [
+          {
+              "type": "equals",
+              "key": "PUBLISHING_COUNTRY",
+              "value": "SE"
+          },
+          {
+            "type": "and",
+            "predicates": [
+              {
+                "type": "equals",
+                "key": "COUNTRY",
+                "value": "SE"
+              },
+              {
+                "type": "not",
+                "predicate": {
+                  "type": "equals",
+                  "key": "ISSUE",
+                  "value": "COUNTRY_COORDINATE_MISMATCH"
+                }
+              }
+            ]
+          }
+        ]
+      }
+    };
+
+    const occurrence = await fetchJson('https://api.gbif.org/v1/occurrence/search/predicate', predicateQuery);
+    updateElement('occurrence-count', occurrence.count);
+    occurrence.facets[0].counts.forEach(item => {
       updateElement('family-' + item.name + '-count', item.count);
     });
   }
 
-  const fetch_json = async(url) => {
-    const response = await fetch(url);
+  const fetchJson = async(url, postData) => {
+    let options = {};
+    if (postData) {
+      options = {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify(postData)
+      };
+    }
+    const response = await fetch(url, options);
     return await response.json();
   }
 
