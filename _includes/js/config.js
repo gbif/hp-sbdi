@@ -134,7 +134,8 @@ var siteConfig = {
       "year",
       "country",
       "issue",
-      "geometry"
+      "geometry",
+      "q"
     ],
     "excludedFilters": [
       "networkKey",
