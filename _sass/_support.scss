@@ -1,27 +1,23 @@
 .support--courses {
     article {
         border-bottom: 4px solid $color-slate-200;
-        margin-top: 2rem;
+        margin-top: 1.5rem;
         padding-bottom: 0.5rem;
 
         &:last-child {
            border-bottom: none;
-        }
-        h3 {
-            color: $color-sbdi-darkblue;
-            font-size: 1.2rem;
         }
     }
 }
 
 .support--webinars {
     article {
-        h4 {
-            color: $color-sbdi-darkblue;
-            font-size: 1.1rem;
-        }
-        p {
-            margin-bottom: 1.3rem;
+        border-bottom: 4px solid $color-slate-200;
+        margin-top: 1.5rem;
+        padding-bottom: 0.5rem;
+
+        &:last-child {
+           border-bottom: none;
         }
     }
 }

@@ -16,7 +16,7 @@ Below you find an overview of our educational online modules in Biodiversity Inf
 <div class="support--courses">
 {% for course in site.courses %}
   <article>
-    <h3><a href="{{ course.url }}">{{ course.title }}</a></h3>
+    <h3>{{ course.title }}</h3>
     <p>
       {% include preamble.html page=course %}
     </p>
@@ -36,13 +36,13 @@ Here you find a library of past webinars and workshop recordings. You can also b
   <h3>{{ section.title }}</h3>
   {% for webinar in section.items %}
     <article>
-      <h4>
-        <a href="{{ webinar.link }}">{{ webinar.title }}</a>
-        {% if webinar.duration %}<span>[{{ webinar.duration }}]</span>{% endif %}
-      </h4>
+      <h4>{{ webinar.title }}</h4>
       <p>
         {{ webinar.description }}
       </p>
+      <footer>
+        <a href="{{ webinar.link }}" title="{{ webinar.title }}" class="link-icon text-lg">View [{{ webinar.duration }}]</a>
+      </footer>
     </article>
   {% endfor %}
 {% endfor %}
