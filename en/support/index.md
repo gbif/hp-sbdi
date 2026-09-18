@@ -10,9 +10,6 @@ tocMaxDepth: 2
 {: .box }
 If you have any questions, suggestions, or need help with finding and publishing biodiversity data – contact us via our [online support form](https://docs.biodiversitydata.se/support/).
 
-## Documentation
-[Documentation and FAQ's are available here.](https://docs.biodiversitydata.se)
-
 ## Online courses
 Below you find an overview of our educational online modules in Biodiversity Informatics. Many of these modules are thematically linked and can be used to stepwise build up your expertise in a certain topic. 
 
