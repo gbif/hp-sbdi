@@ -7,7 +7,7 @@ layout:
   {%- for page in all_content -%}
     {%- comment -%} Exclude pages with extensions eg .json, .xml, .txt {%- endcomment -%}
     {%- assign last_path = page.url | split: "/" | last -%}
-    {%- unless page.skipSitemap or last_path contains "." -%}
+    {%- unless page.sitemap == false or last_path contains "." -%}
     <url>
       <loc>{{ site.url }}{{ page.url }}</loc>
     </url>
