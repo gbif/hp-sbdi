@@ -15,13 +15,13 @@
     "id": "publisher-count"
   },
   {
+    "title": "ASV datasets",
+    "url": "https://asv-portal.biodiversitydata.se/download",
+    "count": 24
+  },
+  {
     "title": "Biologging datasets",
     "url": "https://biologging.biodiversitydata.se/datasetOverview",
     "count": 7
-  },
-  {
-    "title": "ASV datasets",
-    "url": "https://asv-portal.biodiversitydata.se/download",
-    "count": 23
   }
 ]

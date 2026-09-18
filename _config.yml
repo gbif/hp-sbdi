@@ -107,10 +107,6 @@ collections:
   events:
     output: true
     permalink: "/:collection/:year/:month/:slug/"
-  courses:
-    output: true
-    sort_by: sort_order
-    permalink: "/support/courses/:slug/"
 
 permalink: pretty # will strip extensions like .html from urls
 
@@ -136,11 +132,6 @@ defaults:
       type: events
     values:
       layout: event-item
-  - scope:
-      path: ""
-      type: courses
-    values:
-      layout: course-item
 
 feed:
   posts_limit: 50
