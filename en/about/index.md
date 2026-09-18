@@ -2,6 +2,8 @@
 layout: default
 title: About SBDI
 permalink: /about/
+redirect_from:
+  - /about-us/
 ---
 # {{ page.title }}
 
