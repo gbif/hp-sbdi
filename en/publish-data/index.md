@@ -2,6 +2,24 @@
 layout: default
 title: Publish data
 permalink: /publish-data/
+redirect_from:
+  - /publish-data/sbdi-data-policy-and-vision/
+  - /share/how-to-share-data/
+  - /share/how-to-share-data/data-publishing-tools/
+  - /share/how-to-share-data/data-quality-and-validation/
+  - /share/how-to-share-data/data-requirements/
+  - /share/how-to-share-data/what-data-are-interesting/
+  - /share/our-data/
+  - /share/our-data/data-types/
+  - /share/our-data/sbdi-data-providers/
+  - /share/our-data/sbdi-data-policy-and-vision/
+  - /share/our-data/sensitive-data/
+  - /share/why-share-data/
+  - /share/why-share-data/data-management-plans/
+  - /share/why-share-data/getting-cited/
+  - /share/why-share-data/research-benefits/
+  - /share/why-share-data/sharing-data-with-gbif/
+  - /share/why-share-data/societal-benifits/
 ---
 # {{ page.title }}
 

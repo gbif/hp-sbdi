@@ -4,6 +4,18 @@ title: Support
 permalink: /support/
 toc: true
 tocMaxDepth: 2
+redirect_from:
+  - /support/training/
+  - /support/training/courses/access-to-biodiversity-data-through-web-services/
+  - /support/training/courses/basic-spatial-analysis-in-r/
+  - /support/training/courses/advanced-spatial-analysis-in-r/
+  - /support/training/courses/advanced-spatial-analysis-in-r/
+  - /support/training/courses/basic-python-for-biologists/
+  - /support/training/courses/advanced-python-for-biologists/
+  - /support/training/courses/basic-phylogeography/
+  - /support/training/courses/advanced-phylogenetic-analysis-with-supersmartr/
+  - /support/training/courses/biodiversity-data-mobilization-course/
+  - /support/webinars/
 ---
 # Support
 

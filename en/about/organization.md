@@ -4,6 +4,14 @@ title: Organization
 permalink: /about/:basename/
 toc: true
 tocMaxDepth: 2
+redirect_from:
+  - /about/organization/consortium-partners/
+  - /about/organization/executive-office/
+  - /about/organization/governance/
+  - /about-us/who-we-are/
+  - /about-us/who-we-are/sbdi-consortium-partners/
+  - /about-us/who-we-are/sbdi-executive-office/
+  - /about-us/who-we-are/sbdi-governance/
 ---
 # {{ page.title }}
 

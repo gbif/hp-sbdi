@@ -2,6 +2,8 @@
 title: "[Training course FRB-Cesab] AI for ecologists: a toolkit – 2026"
 date: 2025-12-04
 image: 2025-12-04_cesab.png
+redirect_from:
+  - /news/training-course-frb-cesab-ai-for-ecologists-a-toolkit-2026/
 ---
 The [Cesab](https://www.fondationbiodiversite.fr/en/la-fondation/le-cesab/) – Centre for the Synthesis and Analysis of Biodiversity – of the FRB is opening the second edition of the training course ***«Artifical Intelligence for ecologists: a toolkit»***. This five-day training course aims to initiate ecologists to AI concepts and tools. The course will be a mix of lectures and hands-on practice based on different data types commonly encountered in ecology. The main objective of the course is to give to the participants the autonomy that will allow them to assess which algorithms are most adapted to their own research questions, where to find them and how to adjust them to the desired question. 
 

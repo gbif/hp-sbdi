@@ -3,7 +3,17 @@ layout: default
 title: About SBDI
 permalink: /about/
 redirect_from:
+  - /about/contact/
   - /about-us/
+  - /about-us/what-we-do/
+  - /about-us/what-we-do/history/
+  - /about-us/what-we-do/strategic-plan/
+  - /about-us/what-we-do/vision/
+  - /about-us/where-we-are/
+  - /about-us/where-we-are/global-gbif/
+  - /about-us/where-we-are/sweden/
+  - /about-us/where-we-are/the-living-atlases-community/
+  - /about-us/who-we-are/contact-us/
 ---
 # {{ page.title }}
 

@@ -2,6 +2,11 @@
 layout: default
 title: Programming and API:s
 permalink: /explore-data/:basename/
+redirect_from:
+  - /explore-analyze/use-your-own-tools/
+  - /explore-analyze/use-your-own-tools/our-apis/
+  - /explore-analyze/use-your-own-tools/r-support/
+  - /our-apis/
 ---
 # {{ page.title }}
 

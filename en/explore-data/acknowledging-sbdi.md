@@ -2,6 +2,8 @@
 layout: default
 title: Acknowledging SBDI and data partners
 permalink: /explore-data/:basename/
+redirect_from:
+  - /explore-analyze/data-and-tools/acknowledging-sbdi/
 ---
 # {{ page.title }}
 

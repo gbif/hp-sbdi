@@ -4,6 +4,8 @@ date: 2025-10-13
 image: 2025-10-13_open-data.jpg
 description: >-
   GBIF Sweden will participate in the upcoming webinar “Open Data – a Resource for Academia,” organized by the Swedish Research Council (<a href="https://www.vr.se/english.html">Vetenskapsrådet</a>) and <a href="https://www.digg.se/en">DIGG</a>, the Agency for Digital Government. The event will take place on 17 October 2025, from 10:00 a.m. to 12:00 p.m., and will be held online.
+redirect_from:
+  - /news/gbif-sweden-at-the-open-data-a-resource-for-academia-webinar/
 ---
 
 The webinar will highlight how open data from public actors, including research data, can be discovered and used as a strategic resource in research, education, and innovation.

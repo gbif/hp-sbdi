@@ -2,6 +2,22 @@
 layout: default
 title: Tools and data
 permalink: /explore-data/
+redirect_from:
+  - /explore-analyze/
+  - /explore-analyze/data-and-tools/
+  - /explore-analyze/data-and-tools/sbdi-datasets/
+  - /explore-analyze/data-and-tools/sbdi-tools/
+  - /explore-analyze/data-and-tools/sbdi-tools/asv/
+  - /explore-analyze/data-and-tools/sbdi-tools/bioatlas-core/
+  - /explore-analyze/data-and-tools/sbdi-tools/biocollect/
+  - /explore-analyze/data-and-tools/sbdi-tools/nf-core-ampliseq/
+  - /explore-analyze/data-and-tools/sbdi-tools/nordic-microalgae/
+  - /explore-analyze/data-and-tools/sbdi-tools/plankton-toolbox/
+  - /explore-analyze/data-and-tools/sbdi-tools/sbdi-biologging-portal/
+  - /explore-analyze/data-and-tools/sbdi-tools/sead/
+  - /explore-analyze/data-and-tools/sbdi-tools/sharkweb-and-sharkdata/
+  - /explore-analyze/data-and-tools/sbdi-tools/spatial-portal/
+  - /explore-analyze/data-and-tools/sbdi-tools/wram/
 ---
 # {{ page.title }}
 

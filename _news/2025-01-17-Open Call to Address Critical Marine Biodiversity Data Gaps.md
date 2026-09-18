@@ -2,6 +2,8 @@
 title: "Open Call to Address Critical Marine Biodiversity Data Gaps"
 date: 2025-01-17
 image: 2025-01-17_Social-Banner-second-open-call-liten.png
+redirect_from:
+  - /news/open-call-to-address-critical-marine-biodiversity-data-gaps/
 ---
 
 The DTO-BioFlow project is launching its second open call, inviting international networks, citizen science initiatives, research institutes, universities, and NGOs to contribute marine biodiversity data to the European Digital Twin of the Ocean. This initiative is aligned with the EU’s mission to restore oceans and waters by 2030, enhancing oceanographic knowledge and supporting evidence-based policy development.

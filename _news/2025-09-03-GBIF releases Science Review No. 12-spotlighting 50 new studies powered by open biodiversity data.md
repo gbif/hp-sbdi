@@ -2,6 +2,8 @@
 title: "GBIF releases Science Review No. 12 – spotlighting 50 new studies powered by open biodiversity data"
 date: 2025-09-03
 image: 2025-09-03_Science_review.png
+redirect_from:
+  - /news/gbif-releases-science-review-no-12-spotlighting-50-new-studies-powered-by-open-biodiversity-data/
 ---
 
 Use of GBIF-mediated data in science continues to grow across both disciplines and geography. In the first three months of 2025 alone, GBIF logged a 27 per cent increase in papers using open biodiversity data compared to the same period the year before.

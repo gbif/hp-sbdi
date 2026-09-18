@@ -2,6 +2,8 @@
 layout: default
 title: Our events
 permalink: /events/
+redirect_from:
+  - /event/researchdata-se-swedens-new-portal-for-research-data/
 ---
 # {{ page.title }}
 

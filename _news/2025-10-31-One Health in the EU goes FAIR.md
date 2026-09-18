@@ -2,6 +2,8 @@
 title: "One Health in the EU goes FAIR: VectorNet Data Portal launches, with GBIF Sweden supporting data mobilization"
 date: 2025-10-31
 image: 2025-10-31_VectorNetobservations.png
+redirect_from:
+  - /news/one-health-in-the-eu-goes-fair-vectornet-data-portal-launches-with-gbif-sweden-supporting-data-mobilization/
 ---
 The [European Food Safety Authority (EFSA)](https://www.efsa.europa.eu/en) and the [European Centre for Disease Prevention and Control (ECDC)](https://www.ecdc.europa.eu/en) have launched the [VectorNet Data Portal](https://www.vectornetdata.org/), providing a central access point to validated European occurrence data for vectors such as mosquitoes, ticks, sand flies, and biting midges. The portal leverages GBIF’s hosted portal infrastructure to improve discovery, access, and appropriate reuse of health-related biodiversity data under the FAIR principles.
 

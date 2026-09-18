@@ -2,6 +2,8 @@
 title: "New vegetation dataset from NILS opens a window onto Sweden’s changing landscapes"
 date: 2025-12-05
 image: 2025-12-05-NILS.png
+redirect_from:
+  - /news/new-vegetation-dataset-from-nils-opens-a-window-onto-swedens-changing-landscapes/
 ---
 
 A new dataset from the National Inventories of Landscapes in Sweden (NILS) is now available through GBIF Sweden, offering a uniquely detailed look at how vegetation and habitats are distributed across the country. The dataset, “[National Inventories of Landscapes in Sweden: Presence-absence Vegetation data](https://doi.org/10.15468/jxusk2)”, brings nearly two decades of systematic field observations into the global pool of open biodiversity data.

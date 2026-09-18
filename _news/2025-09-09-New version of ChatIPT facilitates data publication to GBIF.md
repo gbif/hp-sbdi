@@ -2,6 +2,8 @@
 title: "New version of ChatIPT facilitates data publication to GBIF"
 date: 2025-09-09
 image: 2025-09-09_chatipt.png
+redirect_from:
+  - /news/new-version-of-chatipt-facilitates-data-publication-to-gbif/
 ---
 A new version of ChatIPT, a chatbot developed by GBIF Norway, is now available for testing. The tool is designed to help non-technical users publish biodiversity data to GBIF, lowering the threshold for researchers, students, and institutions that may not have prior experience with data publishing.
 

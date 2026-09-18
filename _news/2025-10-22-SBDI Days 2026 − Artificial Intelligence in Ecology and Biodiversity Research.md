@@ -5,6 +5,8 @@ image: 2025-10-22_SBDI-days-2026.jpg
 description: >-
   Artificial Intelligence is no longer just a tool—it is becoming a vital partner in the quest to understand and protect biodiversity. 
   <strong>SBDI Days 2026</strong> will explore this transformative partnership under the theme: <strong>AI and Biodiversity: a Perfect Pair!</strong>
+redirect_from:
+  - /news/sbdi-days-2026-artificial-intelligence-in-ecology-and-biodiversity-research/
 ---
 
 This forward-looking conference will bring together researchers working in the fields of ecology, biology, biodiversity, remote sensing, genetic monitoring, Earth system science, and data science, to examine how AI and machine learning are reshaping the study of Life on Earth. We’ll explore the power and promise of big data methods—including **e-DNA**, **a-DNA**, **remote sensing**, and **image analysis**—when coupled with advanced AI and ML techniques. From tracking species via drones and autonomous submarines to processing massive ecological datasets in real time, the road to **full AI implementation in robotics** is already under construction.

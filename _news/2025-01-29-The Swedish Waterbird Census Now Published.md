@@ -4,6 +4,8 @@ date: 2025-01-29
 image: 2025-01-29_EJDER-flock-blandat-kon_800-px-ljusare.jpg
 description: >-
   Two new datasets from the Swedish Bird Survey have been published, covering long-term data on waterbirds from January and September counts. With over 247,000 observations of nearly 22 million birds across 73 species over 58 years , these datasets provide a crucial resource for understanding changes in Sweden’s waterbird populations in the non-breeding season.
+redirect_from:
+  - /news/the-swedish-waterbird-census-now-published/
 ---
 
 The Swedish Bird Survey is a national monitoring scheme commissioned by the Swedish Environmental Protection Agency. Thanks to hard work and good cooperation, it has resulted in the release of two additional datasets: the Swedish Waterbird Census (January) and the Swedish Waterbird Census (September). These datasets are now available via SBDI/GBIF.

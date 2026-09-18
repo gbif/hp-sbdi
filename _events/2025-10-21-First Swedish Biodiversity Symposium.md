@@ -6,6 +6,8 @@ end_time: 2025-10-23
 location: "Wallenberg Center, Gothenburg"
 image: 2025-10-21_Therese-Ek-biodiversitysymposium.jpg
 description: Swedish Biodiversity Symposium (SBS2025 ) is a science-policy interface-oriented forum for communication, dissemination, and discussion of science-based knowledge on biodiversity. It provides an opportunity to gain new perspectives, learn from one another, and engage in networking and new collaborations.
+redirect_from:
+  - /event/first-swedish-biodiversity-symposium/
 ---
 
 With the main theme: *“Transformative change – from knowledge to action”*, the symposium invites to discussions from multiple perspectives, including conservation, genetic resources, evolution, decision-making, species loss, ecosystem services/nature’s contributions to people, nature-based solutions, restoration efforts, monitoring work, psychology, climate, land use, health, economic incentives/policy instruments, food security, pollution, and more.
