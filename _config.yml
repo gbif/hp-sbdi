@@ -139,3 +139,6 @@ feed:
   posts_limit: 50
   collections:
     - news
+
+# This is needed to render future events in the events collection
+future: true
