@@ -4,7 +4,7 @@ organize: false
 start_time: 2026-11-17
 end_time: 2026-11-20
 location: Bruges, Belgium
-image: 2026-11-17_World_Congress_on_Marine_Biodiversity.webp
+image: 2026-11-17_World_Congress_on_Marine_Biodiversity.png
 description: >
  The 7th edition of the World Conference on Marine Biodiversity will be organized in Bruges between November 17th and 20th 2026. 
 ---

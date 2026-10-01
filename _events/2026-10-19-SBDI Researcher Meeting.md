@@ -4,7 +4,7 @@ organize: true
 start_time: 2026-10-19 12:00
 end_time: 2026-10-19 13:40
 location: SciLifeLab, Solna
-image: SBDI-rgb.svg
+image: SBDI-rgb.png
 description: >
   Welcome to this SBDI Researcher Meeting inviting interested researchers and others working with biodiversity data, especially at KTH, KI and SciLifeLab Campus Solna.
 ---
