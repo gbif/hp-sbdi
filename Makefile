@@ -14,3 +14,9 @@ _clean-deps:
 	rm Gemfile.lock
 
 bump-deps: _clean-deps rebuild
+
+news:
+	@_script/create-news.sh
+
+event:
+	@_script/create-event.sh
